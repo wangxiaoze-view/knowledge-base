@@ -6,9 +6,7 @@ categories:
 
 ## 温馨提示
 
-{% note info flat %}
-基础`git`暂时这样整理完成，后期可继续整理;
-{% endnote %}
+> 基础`git`暂时这样整理完成，后期可继续整理;
 
 ## 配置 user 信息
 
