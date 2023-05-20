@@ -39,11 +39,11 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: http://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
+favicon: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
 
 # Avatar (頭像)
 avatar:
-  img: http://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
+  img: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
   effect: false
 
 # Disable all banner image
@@ -168,10 +168,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: http://qiniu.wangxiaoze.wang/hexo-blog/wx_pay.png
+    - img: https://qiniu.wangxiaoze.wang/hexo-blog/wx_pay.png
       link:
       text: wechat
-    - img: http://qiniu.wangxiaoze.wang/hexo-blog/zfb_pay.png
+    - img: https://qiniu.wangxiaoze.wang/hexo-blog/zfb_pay.png
       link:
       text: alipay
 
@@ -211,7 +211,7 @@ footer:
   owner:
     enable: true
     since: 2023
-  custom_text: <div style="display:flex;align-items:center;font-weight:600;flex-wrap:wrap;justify-content:center;"> 本网站由 <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank"><img src="http://qiniu.wangxiaoze.wang/hexo-blog/ypy_logo.png" alt="又拍云" width="100" height="50"></a> 提供 CDN 加速/云存储服务 <a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left:10px;"> 晋ICP备2022011771号-1</a></div>
+  custom_text: <div style="display:flex;align-items:center;font-weight:600;flex-wrap:wrap;justify-content:center;"> 本网站由 <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank"><img src="https://qiniu.wangxiaoze.wang/hexo-blog/ypy_logo.png" alt="又拍云" width="100" height="50"></a> 提供 CDN 加速/云存储服务 <a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left:10px;"> 晋ICP备2022011771号-1</a></div>
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
