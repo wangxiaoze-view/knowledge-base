@@ -15,7 +15,7 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
   友情链接: /link/ || fas fa-link
-  关于: /about/index || fas fa-heart
+  关于: /about/ || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
