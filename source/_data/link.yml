@@ -45,4 +45,9 @@
       link: https://tinypng.com/
       avatar: https://tinypng.com/images/social/website.jpg
       descr: 很nice的图片压缩网站
+    - name: Vercel
+      link: https://vercel.com/
+      avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/57x57.png
+      descr: 一个可以部署你的静态网址的强大网站
+
 
