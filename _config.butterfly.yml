@@ -166,12 +166,12 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    - img: /img/wechat.jpg
+    - img: http://qiniu.wangxiaoze.wang/hexo-blog/wx_pay.png
       link:
       text: wechat
-    - img: /img/alipay.jpg
+    - img: http://qiniu.wangxiaoze.wang/hexo-blog/zfb_pay.png
       link:
       text: alipay
 
@@ -548,8 +548,8 @@ daovoice:
 # crisp
 # https://crisp.chat/en/
 crisp:
-  enable: false
-  website_id:
+  enable: true
+  website_id: ef9f9638-269b-4534-a7f2-3adee9d86323
 
 # messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
