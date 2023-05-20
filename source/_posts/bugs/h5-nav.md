@@ -6,8 +6,10 @@ categories:
 
 ## 背景
 
-> 前端时间移动APP与h5的一个混合式开发项目中，遇到了一个比较搞笑的bug；刚开始有点纳闷，后来静下心来才觉得这个问题有点可笑；
+{% note info flat %}
+前端时间移动APP与h5的一个混合式开发项目中，遇到了一个比较搞笑的bug；刚开始有点纳闷，后来静下心来才觉得这个问题有点可笑；
 h5的项目采用的vue3 + vant3开发的，h5页面的顶部`tabBar`结构为左中右，是对vant的二次封装；
+{% endnote %}
 
 ## 复盘
 
@@ -19,8 +21,7 @@ h5的项目采用的vue3 + vant3开发的，h5页面的顶部`tabBar`结构为�
 
 ### **浏览器打开h5一级页面模拟bug复现**
 
-采用`vue-router`中的`router.back()` 和 `router.go(page)`方法，均在浏览器中返回的是一级页面；但是在`app webview`中
-直接跳出。执行了俩次；
+采用`vue-router`中的`router.back()` 和 `router.go(page)`方法，均在浏览器中返回的是一级页面；但是在`app webview`中直接跳出。执行了俩次；
 
 使用调试手段. `console日志 和 debugger` 都会发现执行了俩次；
 

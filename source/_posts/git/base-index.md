@@ -4,9 +4,12 @@ categories:
   - Git
 ---
 
+
 ## 温馨提示
 
-> 基础`git`暂时这样整理完成，后期可继续整理;
+{% note info flat %}
+基础`git`暂时这样整理完成，后期可继续整理;
+{% endnote %}
 
 ## 配置 user 信息
 
