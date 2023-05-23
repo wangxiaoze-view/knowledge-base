@@ -25,6 +25,10 @@
       link: https://simple-admin.wangxiaoze.wang/
       avatar: https://qiniu.wangxiaoze.wang/hexo-blog/vue_logo.svg
       descr: 超简单的后台模板，主要是主题配置功能
+    - name: Web Demos
+      link: https://web-demos.wangxiaoze.wang/
+      avatar: https://cn.vitejs.dev/logo-with-shadow.png
+      descr: 一个集合demo功能的整合网站
 
 - class_name: 网站
   class_desc: 值得推荐的网站
