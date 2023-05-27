@@ -3,6 +3,8 @@ title: 选项卡切换loading的优雅方案
 date: 2023-05-24
 categories:
   - Demos
+tags:
+    - Vue
 ---
 
 ## 场景
@@ -121,5 +123,5 @@ export function useFetch(url) {
 
 选项卡的loading案例完整代码可参考：
 
-- [x] 源代码：[gitHub](https://github.com/wangxiaoze-view/web-demos.git) `/src/views/vue/tabLoading`
+- [x] 源代码：[gitHub](https://github.com/wangxiaoze-view/web-demos/tree/main/src/views/vue/tabLoading) 
 - [x] 在线预览 [选项卡加载](https://web-demos.wangxiaoze.wang/#/vue/tabsLoading), 友情链接个人项目中`Web Demos`点击可查看；后续会持续更新；

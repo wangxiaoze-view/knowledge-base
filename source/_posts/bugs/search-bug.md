@@ -1,5 +1,5 @@
 ---
-title: 搜索查询调用接口异常
+title: 中英文搜索按键回车事件冲突
 date: 2023-05-21
 categories:
   - Bugs

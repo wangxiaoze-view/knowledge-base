@@ -1,8 +1,10 @@
 ---
-title: 图片水印
+title: 图片上传之前的自定义水印
 date: 2023-05-22
 categories:
   - Demos
+tags:
+    - JavaScript
 ---
 
 ## 背景

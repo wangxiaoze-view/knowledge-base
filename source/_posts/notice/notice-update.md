@@ -3,6 +3,8 @@ title: 网站迁移更新公告
 date: 2023-05-18
 categories:
   - 公告
+tags:
+  - 公告
 ---
 
 ## 芜湖～

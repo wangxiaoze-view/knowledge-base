@@ -282,7 +282,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date:  3/7/2023 00:00:00 
+  publish_date:  5/10/2023 00:00:00 
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -708,9 +708,13 @@ click_heart:
 ClickShowText:
   enable: true
   text:
-    - I
-    - LOVE
-    - YOU
+    - Html
+    - Css
+    - JavaScript
+    - Java
+    - Node
+    - Flutter
+    - Dart
   fontSize: 15px
   random: false
   mobile: false
