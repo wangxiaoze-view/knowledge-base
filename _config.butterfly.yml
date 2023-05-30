@@ -378,10 +378,10 @@ local_search:
 
 # Docsearch
 docsearch:
-  enable: false
-  appId:
-  apiKey:
-  indexName:
+  enable: true
+  appId: CBVXXU4KUE
+  apiKey: ee6a8a765ccc0e90991ef28dca78a0d4
+  indexName: wangxiaoze
   option:
 
 # Share System (分享)
