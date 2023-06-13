@@ -1,4 +1,4 @@
-- class_name: 友情链接
+- class_name: 框架主题
   class_desc: 那些人，那些事
   link_list:
     - name: Hexo
@@ -30,28 +30,79 @@
       avatar: https://cn.vitejs.dev/logo-with-shadow.png
       descr: 一个集合demo功能的整合网站
 
-- class_name: 网站
-  class_desc: 值得推荐的网站
+- class_name: 文档转换工具
+  class_desc: 强大的文档处理工具
   link_list:
-    - name: Youtube
-      link: https://www.youtube.com/
-      avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
-      descr: 视频网站
-    - name: Weibo
-      link: https://www.weibo.com/
-      avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
-      descr: 中国最大社交分享平台
-    - name: Twitter
-      link: https://twitter.com/
-      avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
-      descr: 社交分享平台
-    - name: Tinypng
-      link: https://tinypng.com/
-      avatar: https://tinypng.com/images/social/website.jpg
-      descr: 很nice的图片压缩网站
     - name: Vercel
       link: https://vercel.com/
       avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/57x57.png
       descr: 一个可以部署你的静态网址的强大网站
+    - name: ABCD PDF在线转换工具
+      link: https://abcdpdf.com/zh-cn/
+      avatar: https://abcdpdf.com/images/abcd_logo_inner.svg
+      descr: 一款专业处理文档文件转换的工具网站
+    - name: PDF猫
+      link: https://www.pdfmao.com/word2pdf
+      avatar: https://www.pdfmao.com/static/images/logo.png
+      descr: 一款免费的文档转换工具
+      
+- class_name: 图片处理
+  class_desc: 强大的图片处理工具
+  link_list:
+    - name: Tinypng
+      link: https://tinypng.com/
+      avatar: https://tinypng.com/images/social/website.jpg
+      descr: 使您的网站更快，节省带宽。TinyPNG优化您的WebP, PNG和JPEG图像的50-80%，同时保持完全的透明度!
+    - name: Picdiet
+      link: https://picdiet.eula.club/
+      avatar: https://picdiet.eula.club/favicon.ico
+      descr: 基于mozjpeg，能极速压缩80%的图片大小，而不损害其质量
+    - name: 佐糖
+      link: https://picwish.cn/remove-unwanted-object
+      avatar: https://qncdn.aoscdn.com/img/picwish-home/favicon.png
+      descr: 一款免费在线消除笔工具，操作简单，一键移除图片多余物体，例如垃圾桶，电线杆等，也能轻松移除，甚至图片中的文字，logo等瑕疵也可以免费去除，去除后保证图片画质高质量，快捷高效！
+      
+      
+- class_name: 程序员常用
+  class_desc: 强大的文档处理工具
+  link_list:
+    - name: Vercel
+      link: https://vercel.com/
+      avatar: https://assets.vercel.com/image/upload/front/favicon/vercel/57x57.png
+      descr: 一个可以部署你的静态网址的强大网站
+    - name: Regulex
+      link: https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24
+      avatar: https://jex.im/favicon.ico
+      descr: 可视化的正则表达式
+    - name: Carbon
+      link: https://carbon.now.sh/
+      avatar: https://carbon.now.sh/static/brand/icon.png
+      descr: Carbon是创建和共享源代码的美丽图像的最简单方法。
+    - name: Overapi
+      link: https://overapi.com/
+      avatar: https://overapi.com/static/images/overapi-logo.png
+      descr: OverAPI.com是一个收集所有备忘单的网站!。
+    - name: Devdocs
+      link: https://devdocs.io/
+      avatar: https://devdocs.io/favicon.ico
+      descr: 快速，离线，免费的文档浏览器为开发人员。在一个web应用程序中搜索100+文档:HTML, CSS, JavaScript, PHP, Ruby, Python, Go, C, c++…
+    - name: Devdocs
+      link: https://roadmap.sh/
+      avatar: https://roadmap.sh/manifest/favicon.ico
+      descr: 社区驱动，文章，资源，指南，面试问题，为价值发展测验。通过遵循本路线图中列出的步骤、技能、资源和指南，学习成为一名现代Vue开发人员。
+    - name: ECharts图表集
+      link: https://www.isqqw.com/
+      avatar: https://www.isqqw.com/favicon.ico
+      descr: ECharts图表集,EChartsDemo集,echarts gallery,Make A Pie,分享你的可视化作品isqqw.com
+    - name: 可视化数据
+      link: https://madeapie.com/#/
+      avatar: https://madeapie.com/favicon.ico
+      descr: echarts, 可视化数据，图表，图表制作，echarts图表制作，Make A Pie，Made A Pie，echarts案例，echarts教程
+      
+      
+      
+      
+    
+      
 
 
