@@ -1,0 +1,167 @@
+---
+title: 支付应用中转页H5
+date: 2023-06-23
+categories:
+  - Demos
+tags:
+    - Vue
+    - 小程序
+---
+
+## 背景
+
+{% note info flat %}
+最近上线了一个新的需求，就是支付版本的升级；何为升级？那就是在原有的基础上扩展添加了不同版本的支付功能；既保持了原有正常的功能，又扩展了一些第三方的支付版本；
+{% endnote %}
+
+先说说，为什么要升级，原有的版本会有什么弊端，升级之后支持了哪些或者扩展了哪些？
+
+起初的支付，是通过后端获取到对应的参数，然后进行api唤起支付面板进行支付，不过这样有一个弊端就是微信支付会有限制额度的说法，如果支付金额过大，那么可能会支付不了；
+
+年前上线了`商家商户端`小程序，又赶上支付版本的升级，接着俩者就结合在一起了；本来拿到该需求很快就该上手开发的，但是由于其他需求版本，开始时间延迟了；所以到后面的开发时间也就压缩了，一周的开发时间，到周五上线的；
+
+那么研究了一下这个流程，其实也没什么难度，就是一些细节是比较多的；对于参数的加解密，数据的加解密等等是比较麻烦的；
+
+其中第三方接口会有加解密的一个过程，这个加解密最后丢给了后端，直接拿接口获取，加解密放在前端的话细节太多，有点浪费时间了；
+
+## 思路
+
+接下来大致说下实现的思路：
+
+- [x] `vue`开发一个`H5`中转页面，而这个页面也会是之后所有支付的页面，包括扫码支付，下单支付等等；
+- [x] 中转页面兼容参数，数据兼容，query参数兼容；因为在后台在生成链接渲染在前端页面上，手机扫码去支付会有`url`参数解析异常的问题，针对该问题进行优化兼容；
+- [x] 对于预支付返回的支付参数是不统一的，那就只能存在缓存或者query参数，对该对应的字段进行加密；
+- [x] 根据后台配置的商家支付版本判断，是否需要原生微信支付或者是跳转小程序支付；
+
+那么大致流程图如下：
+
+![效果](https://qiniu.wangxiaoze.wang/hexo-blog/wechat_pay.png)
+
+## 细节
+
+不过刚开始有一个问题，那么`vue`如何跳转小程序呢？
+
+看了看微信官方的开发文档, 直接看到了`开放标签`
+
+``` js
+<wx-open-launch-weapp
+  id="launch-btn"
+  appid="wx12345678"
+  path="pages/home/index?user=123&action=abc"
+>
+  <script type="text/wxtag-template">
+    <style>.btn { padding: 12px }</style>
+    <button class="btn">打开小程序</button>
+  </script>
+</wx-open-launch-weapp>
+<script>
+  var btn = document.getElementById('launch-btn');
+  btn.addEventListener('launch', function (e) {
+    console.log('success');
+  });
+  btn.addEventListener('error', function (e) {
+    console.log('fail', e.detail);
+  });
+</script>
+
+```
+
+不过使用该开放标签，首先需要设置对应的`wx.config`, 将对应的`开放标签配置好`， 格式如下：
+
+``` js
+wx.config({
+  debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印
+  appId: '', // 必填，公众号的唯一标识
+  timestamp: , // 必填，生成签名的时间戳
+  nonceStr: '', // 必填，生成签名的随机串
+  signature: '',// 必填，签名
+  jsApiList: [], // 必填，需要使用的JS接口列表
+  openTagList: [] // 可选，需要使用的开放标签列表，例如['wx-open-launch-app']
+})
+
+wx.ready(function () {
+  // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中
+});
+
+wx.error(function (res) {
+  // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名
+});
+
+```
+
+不过要说明一点，就是只有`config:ok`的时候才会渲染对应的按钮去打开小程序；这里需要一些兼容问题；但是很坑的地方就是`text/wxtag-template`样式只能写在这个里面，不能写在页面中`style`中；下面是项目中用到的部分代码：
+
+``` html
+<div style="position: relative;">
+    <wx-open-launch-weapp id="launch-btn" style="position: absolute; top: 1.6rem;left:0px;right: 0px;" :username="username" :env-version="wxMpEnvVersion" :path="jumpWxMpPath">
+        <div is="script" type="text/wxtag-template" style="display: block;">
+        <div is="style">
+            .pay-button {position: relative;display: inline-block;boxSizing: border-box;background-color: #07c160;color: #fff;height: 44px;outline: none;border: 1px solid
+            #07c160;border-radius:
+            4px;width:100%;font-size:14px;}
+        </div>
+        <button class="pay-button" @click="handlerToPay('applet')">立即支付</button>
+        </div>
+    </wx-open-launch-weapp>
+</div>
+
+```
+
+省下的就交给接口，拿到对应的版本，`V1, V2, V3`等等；根据不同的场景使用，
+
+``` js
+// 微信原生,这里换成自己对应的参数
+wxJsBridge({
+    'appId': wxJsBridgeJson.appId,
+    'timeStamp': wxJsBridgeJson.timeStamp,
+    'nonceStr': wxJsBridgeJson.nonceStr,
+    'package': wxJsBridgeJson.package,
+    'signType': wxJsBridgeJson.signType,
+    'paySign': wxJsBridgeJson.sign
+}, () => {})
+
+/// 这里处理了兼容的query，后端解析问题异常所以才要这么处理
+getUrlQuery() {
+    const { param = '' } = this.$route.query || {}
+    const hasParam = Object.keys(this.$route.query).includes('param')
+    // 兼容不同url, 普通的query, 特殊的url如上链接;
+    return hasParam ? handlerQueryParams(param) : this.$route.query
+}
+
+// 这是后端给的链接
+// http://xxx.com/payPage?param=businessType:9;payId:1668909350495006721;totalAmt:100000
+
+export function handlerQueryParams(url) {
+  const splitArr = url.split(";").filter(item => item !== "");
+  const query = {};
+  splitArr.forEach(item => {
+    let hasSq = item.indexOf(":");
+    if (hasSq !== -1) {
+      let key = item.substr(0, hasSq);
+      let val = item.substr(hasSq + 1, item.length - 1);
+      query[key] = val;
+    }
+  });
+
+  return query;
+}
+
+```
+
+对于不同支付的版本，当然也会有不同的按钮，例如`v1`版本的是原生支付，`v2`的是开放标签，那么就需要对应的判断了：
+
+``` js
+// 需要跳转小程序支付的
+isPayWeapp() {
+    return ['V2', 'V3'].includes(this.version)
+},
+// 需要原生微信支付的
+// 如果接口报错 或者其他情况默认支持微信原生支付
+isPayWx() {
+    return ['V1'].includes(this.version)
+}
+```
+
+对于小程序那边的处理，也很简单，就是获取到对应的query参数，根据版本进行加解密，获取对应的支付计算等等；
+
+因为涉及相关的第三方就不介绍那么多了；
