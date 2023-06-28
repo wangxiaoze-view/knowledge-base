@@ -13,7 +13,7 @@
 - class_name: 个人项目
   class_desc: 自己动手实现的一些简单功能, 工具等等；
   link_list:
-    - name: 博客(旧版)
+    - name: 博客(旧版)停止更新
       link: https://vurepress-blog.wangxiaoze.wang/
       avatar: https://qiniu.wangxiaoze.wang/hexo-blog/vuepress_logo.png
       descr: VuePress搭建
@@ -29,6 +29,14 @@
       link: https://web-demos.wangxiaoze.wang/
       avatar: https://cn.vitejs.dev/logo-with-shadow.png
       descr: 一个集合demo功能的整合网站
+    - name: 前端基础库
+      link: https://www.npmjs.com/package/web-utils-js
+      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+      descr: 一个集合多种轮子的前端基础库，目前还在不断更新中...
+    - name: 前端基础库js链接(web)
+      link: https://cdn.jsdelivr.net/npm/web-utils-js/npm/umd/index.min.js
+      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+      descr: es,amd,cjs,umd, index.js, index.min.js
 
 - class_name: 文档转换工具
   class_desc: 强大的文档处理工具
