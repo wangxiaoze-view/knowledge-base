@@ -37,6 +37,10 @@
       link: https://cdn.jsdelivr.net/npm/web-utils-js/npm/umd/index.min.js
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
       descr: es,amd,cjs,umd, index.js, index.min.js
+    - name: PPT
+      link: https://web-ppt.wangxiaoze.wang/1
+      avatar: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
+      descr: ppt分享，markdown
 
 - class_name: 文档转换工具
   class_desc: 强大的文档处理工具
