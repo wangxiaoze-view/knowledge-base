@@ -30,13 +30,13 @@
       avatar: https://cn.vitejs.dev/logo-with-shadow.png
       descr: 一个集合demo功能的整合网站
     - name: 前端基础库
-      link: https://www.npmjs.com/package/web-utils-js
+      link: https://www.npmjs.com/package/wxz-utils
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
       descr: 一个集合多种轮子的前端基础库，目前还在不断更新中...
-    - name: 前端基础库js链接(web)
+    - name: 前端基础库文档
       link: https://cdn.jsdelivr.net/npm/web-utils-js/npm/umd/index.min.js
-      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
-      descr: es,amd,cjs,umd, index.js, index.min.js
+      avatar: https://utilstools-docs.wangxiaoze.wang/
+      descr: 在个人项目中为了一部分代码避免重复造轮子使用， 于是花点时间打造一款属于个人的前端底层库; 对了底层库使用TS在合适不过了...
     - name: PPT
       link: https://web-ppt.wangxiaoze.wang/1
       avatar: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
