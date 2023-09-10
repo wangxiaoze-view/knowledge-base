@@ -330,5 +330,89 @@ function getEedirectUrl(redirect: string) {
 }
 ```
 
+## 问题4：(补充)
+
+因为原有的`iframe`页面是`message`通信的，但是由于想要将原有的`dialog`弹窗升级成新版本的`vxe-model`弹窗，那就遇到了一个问题，如何动态创建组件；
+
+为什么是要动态创建组件？
+
+> `iframe 和 vue`通信仅仅只能通过`message消息广播`, 那么如果在`iframe message`一个事件出来那么就会遇到不同的问题，
+
+1. 多个`message`创建不同的`dialog`, 那么总不能在`vue`页面写不同的组件引用吧，那么这样的情况如何引入组件？
+2. 第二个问题就是如何在弹窗显示关闭弹窗，因为弹框 显示的业务场景是不同的，那么对于这样的情况如何处理？
+
+
+那么我这里有一个短暂的解决方案，不过不推荐使用，为什么不推荐使用呢？且听我慢慢道来：
+
+大致的解决思路如下：
+
+``` js
+    const postMessageUtils = (options = {}, targetOrigin = '*') => {
+        window.parent.parent.parent.parent.postMessage(options, targetOrigin);
+    }
+
+
+    const openDialog = (title = '') => {
+        postMessageUtils({
+            // 区分不同的类型
+            type: 'open-dialog',
+            title: '打开新弹窗',
+            // 该url是vue组件的路径
+            url: '/@/views/dialog/index.vue',
+        })
+    }
+
+```
+
+``` ts
+// vue相关代码
+
+const handlerMessage = (e: any) => {
+    const data = e.data
+    // 打开新弹窗
+    data.type === 'open-dialog' && openDIalog(data)
+}
+
+
+onMounted(() => {
+    window.addEventListener('message', handlerMessage)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('message', handlerMessage)
+})
+
+
+const openDIalog  = (options: any) => {
+    // 使用vite 的import动态引入
+    import(options.url).then((data) => {
+        // createApp: vue 内置hooks
+        // 动态创建app
+        const app = createApp(data.default, options.props)
+        // 注册组件
+        app.component(options.name || 'Name', data.default)
+        // app.use(elementplus) 为什么会注册组件ui呢
+        // 因为动态创建组件时，仅仅只是将组件添加元素中，并不会解析组件
+        // 索引显示的内容为: <el-button></el-button> 而不是显示的是: <button class="el-button"></button>
+        app.use(ElementPlus).mount('#vueCon')
+        // 卸载对应的app
+        onUnmounted(() => {
+            app.unmount()
+        })
+    })
+}
+```
+
+现在说下为什么不能使用动态创建组件:
+
+动态组件的初衷是可以的，但是每次都会重新创建组件，这样性能消耗很大，所以vue内部做了优化，将动态组件缓存起来，这样性能消耗就小多了。
+
+但是如果动态组件的组件名是动态的，那么vue内部就无法缓存组件了，所以动态组件的组件名不能是动态的。
+
+这样每次动态创建都会执行`app.use(elementPlus).mount('#vueCon')`, 那么这样再去绑定其他的插件，如`vxe-table`那么每次使用插件, 会有类似的日志： `xxx重复，可能会有问题`; 大致意思就是重复使用插件`xx`可能导致原有得到功能有问题；
+
+如果使用那么可能会在线上有一定的问题，没必要带来不必要的损失;
+
+
 
 
