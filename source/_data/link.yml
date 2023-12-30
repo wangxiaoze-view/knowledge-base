@@ -13,22 +13,10 @@
 - class_name: 个人项目
   class_desc: 自己动手实现的一些简单功能, 工具等等；
   link_list:
-    - name: 博客(旧版)停止更新
-      link: https://vurepress-blog.wangxiaoze.wang/
-      avatar: https://qiniu.wangxiaoze.wang/hexo-blog/vuepress_logo.png
-      descr: VuePress搭建
     - name: npm下载项目模板
       link: https://www.npmjs.com/package/temp-pro
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
       descr: 封装的各个框架模板，直接npm下载
-    - name: 后台模板
-      link: https://simple-admin.wangxiaoze.wang/
-      avatar: https://qiniu.wangxiaoze.wang/hexo-blog/vue_logo.svg
-      descr: 超简单的后台模板，主要是主题配置功能
-    - name: Web Demos
-      link: https://web-demos.wangxiaoze.wang/
-      avatar: https://cn.vitejs.dev/logo-with-shadow.png
-      descr: 一个集合demo功能的整合网站
     - name: 前端基础库
       link: https://www.npmjs.com/package/wxz-utils
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
@@ -37,11 +25,12 @@
       link: https://utilstools-docs.wangxiaoze.wang/
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
       descr: 在个人项目中为了一部分代码避免重复造轮子使用， 于是花点时间打造一款属于个人的前端底层库; 对了底层库使用TS在合适不过了...
-    - name: PPT
-      link: https://web-ppt.wangxiaoze.wang/1
-      avatar: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
-      descr: ppt分享，markdown
+    - name: Web Demos
+      link: https://web-demos.wangxiaoze.wang/
+      avatar: https://cn.vitejs.dev/logo-with-shadow.png
+      descr: 一个集合demo功能的整合网站
 
+      
 - class_name: 文档转换工具
   class_desc: 强大的文档处理工具
   link_list:
