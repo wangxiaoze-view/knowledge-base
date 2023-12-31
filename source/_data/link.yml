@@ -29,7 +29,10 @@
       link: https://web-demos.wangxiaoze.wang/
       avatar: https://cn.vitejs.dev/logo-with-shadow.png
       descr: 一个集合demo功能的整合网站
-
+    - name: 团队一站式导航
+      link: https://team-document.wangxiaoze.wang/
+      avatar: https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg
+      descr: 团队一站式导航, 包含项目文档环境管理等等
       
 - class_name: 文档转换工具
   class_desc: 强大的文档处理工具
