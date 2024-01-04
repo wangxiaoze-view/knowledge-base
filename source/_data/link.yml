@@ -13,6 +13,10 @@
 - class_name: 个人项目
   class_desc: 自己动手实现的一些简单功能, 工具等等；
   link_list:
+    - name: 日志上报
+      link: https://www.npmjs.com/package/log-reporting
+      avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+      descr: 实现前端项目中的错误信息上报插件
     - name: npm下载项目模板
       link: https://www.npmjs.com/package/temp-pro
       avatar: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
