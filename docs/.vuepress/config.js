@@ -17,6 +17,14 @@ module.exports = {
 
 		[
 			"meta",
+			{
+				name: "baidu_union_verify",
+				content: "ee57bd5f28a09177ccb6368df493fbd2",
+			},
+		],
+
+		[
+			"meta",
 			{ name: "wwads-cn-verify", content: "6c4b761a28b734fe93831e3fb400ce87" },
 		], // 广告相关，你可以去掉
 		[
