@@ -19,7 +19,7 @@ module.exports = {
 			"meta",
 			{
 				name: "baidu_union_verify",
-				content: "ee57bd5f28a09177ccb6368df493fbd2",
+				content: "cb3bdee510c2883df3872a41a8092e2c",
 			},
 		],
 
