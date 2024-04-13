@@ -252,20 +252,22 @@ module.exports = {
 			},
 		],
 
-		[
-			"demo-block",
-			{
-				// demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
-				settings: {
-					// jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
-					// cssLib: ['http://xxx'], // 在线示例中的css依赖
-					// vue: 'https://jsd.cdn.zzko.cn/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
-					jsfiddle: false, // 是否显示 jsfiddle 链接
-					codepen: false, // 是否显示 codepen 链接
-					horizontal: false, // 是否展示为横向样式
-				},
-			},
-		],
+		["demo-container"],
+
+		// [
+		// 	"demo-block", // demo演示模块 https://github.com/xiguaxigua/vuepress-plugin-demo-block
+		// 	{
+		// 		settings: {
+		// 			// jsLib: ['http://xxx'], // 在线示例(jsfiddle, codepen)中的js依赖
+		// 			// cssLib: ['http://xxx'], // 在线示例中的css依赖
+		// 			// vue: 'https://jsd.cdn.zzko.cn/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
+		// 			jsfiddle: false, // 是否显示 jsfiddle 链接
+		// 			codepen: true, // 是否显示 codepen 链接
+		// 			horizontal: false, // 是否展示为横向样式
+		// 		},
+		// 	},
+		// ],
+
 		[
 			"vuepress-plugin-zooming", // 放大图片
 			{
