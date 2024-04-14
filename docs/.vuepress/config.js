@@ -87,7 +87,7 @@ module.exports = {
 					},
 					{
 						text: "Flutter",
-						link: "/pages/dbd86d/",
+						link: "/pages/b94f8b/",
 					},
 					{
 						text: "H5",
@@ -138,6 +138,10 @@ module.exports = {
 					{
 						text: "Vue",
 						link: "/pages/ec65a8/",
+					},
+					{
+						text: "技术调研",
+						link: "/pages/de843f/",
 					},
 				],
 			},
