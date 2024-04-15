@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.container {
+  width: 80%;
+  margin: 1em auto;
+  font-family: '行楷-简', Courier, monospace;
+  line-height: 2;
+  text-indent: 2em;
+  font-size: 1.5em;
+  position: relative;
+}
+
+p:nth-child(2) {
+  position: absolute;
+  inset: 0;
+}
+
+
+.text {
+  --p: 0%;
+  background: linear-gradient(to right, #0000 var(--p), #000 calc(var(--p) + 30px));
+  color: transparent;
+  animation: text_p 5s linear forwards;
+}
+
+
+@property --p {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@keyframes text_p {
+  to {
+    --p: 100%;
+  }
+}

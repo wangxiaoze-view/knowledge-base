@@ -1,0 +1,57 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-container {
+  display: flex;
+  width: 90vw;
+}
+
+.item {
+  background-image: url("https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img_1.webp"), url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.5s ease-in;
+}
+
+h1 {
+  opacity: 0;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.item:nth-child(2) {
+  background-image: url("https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img_2.webp"), url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+}
+
+.item:nth-child(3) {
+  background-image: url("https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img_4.jpeg"), url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+}
+
+.item:nth-child(4) {
+  background-image: url("https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img_5.jpeg"), url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+}
+
+.item:nth-child(5) {
+  background-image: url("https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img_6.jpeg"), url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+}
+
+.item-active {
+  flex: 6;
+}
+
+.item-active h1 {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
