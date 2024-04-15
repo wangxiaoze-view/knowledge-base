@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/logo.jpeg
+heroImage: /img/logo.png
 heroText: knowledge base
 tagline: 整理个人工作生活的知识
 actionText: 开始使用 →
