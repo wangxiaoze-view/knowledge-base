@@ -15,7 +15,7 @@ module.exports = {
 			"link",
 			{
 				rel: "icon",
-				href: "https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp",
+				href: "https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg",
 			},
 		], //favicons，资源放在public文件夹
 		["meta", { name: "keywords", content: "vuepress,theme,blog" }],
