@@ -10,22 +10,222 @@
 			href="https://qiniu.wangxiaoze.wang/hexo-blog/wechat_au.jpeg"
 		/>
 		<link rel="stylesheet" href="/demos/03/index.css" />
+		<link rel="stylesheet" href="/styles/element-plus@2.7.0.css" />
+		<script src="/scripts/vue@3.4.21.js"></script>
+		<script src="/scripts/element-plus@2.7.0.js"></script>
 	</head>
 	<body>
-		<div class="speech-view">
-			<textarea
-				name="speech-text"
-				id=""
-				cols="50"
-				rows="8"
-				placeholder="输入文本，点击按钮进行语音播报..."
-			></textarea>
-			<br /><br />
-			<button id="speech-btn">文字转语音，语音播报</button>
-			<br /><br />
-			<button id="speech-btn--2">语音转文字</button>
+		<div id="app">
+			<div class="page-view">
+				<el-input
+					type="textarea"
+					v-model="text"
+					placeholder="请输入文本"
+					:rows="4"
+				></el-input>
+
+				<div class="handler">
+					<el-popover placement="top" :width="340">
+						<template #reference>
+							<el-button type="primary" @click="toSetting">语音合成</el-button>
+						</template>
+						<template #default>
+							<div class="red">
+								注意: 如果<b>设置声音</b>没有数据, 可重新点击
+								<i>语音合成</i>按钮
+							</div>
+
+							<div class="set-row">
+								<div class="label">设置音高</div>
+								<el-slider
+									v-model="model.pitch"
+									:step="0.5"
+									:max="2"
+									show-stops
+								/>
+							</div>
+
+							<div class="set-row">
+								<div class="label">设置速度</div>
+								<el-slider
+									v-model="model.rate"
+									:step="0.5"
+									:max="3"
+									show-stops
+								/>
+							</div>
+
+							<div class="set-row">
+								<div class="label">设置声音</div>
+								<el-select v-model="model.voice" placeholder="请选择声音">
+									<el-option
+										v-for="item in langs"
+										:key="item.lang"
+										:label="item.name"
+										:value="item.lang"
+									>
+									</el-option>
+								</el-select>
+							</div>
+
+							<div class="set-row">
+								<div class="label">设置音量</div>
+								<el-slider
+									v-model="model.volume"
+									:step="0.2"
+									:max="1"
+									show-stops
+								/>
+							</div>
+
+							<el-button type="primary" @click="toVoice('speak')"
+								>播放</el-button
+							>
+							<el-button type="danger" @click="toVoice('cancel')"
+								>停止</el-button
+							>
+							<el-button type="warning" @click="toVoice('pause')"
+								>暂停</el-button
+							>
+							<el-button type="warning" @click="toVoice('resume')"
+								>继续播放</el-button
+							>
+						</template>
+					</el-popover>
+
+					<el-popover placement="top" :width="340">
+						<template #reference>
+							<el-button type="warning">语音识别</el-button>
+						</template>
+						<template #default>
+							<div class="red">
+								注意: 如果设置<b>连续结果</b>, 需要手动点击 <i>结束</i>按钮
+							</div>
+							<div class="set-row">
+								<div class="label">结果</div>
+								<el-radio-group v-model="model.continuous">
+									<el-radio :value="true" :label="true">连续</el-radio>
+									<el-radio :value="false" :label="false">单个</el-radio>
+								</el-radio-group>
+							</div>
+
+							<div class="set-row">
+								<div class="label">临时结果</div>
+								<el-radio-group v-model="model.interimResults">
+									<el-radio :value="true" :label="true">是</el-radio>
+									<el-radio :value="false" :label="false">否</el-radio>
+								</el-radio-group>
+							</div>
+
+							<div class="set-row">
+								<div class="label">最大数</div>
+								<el-slider
+									v-model="model.maxAlternatives"
+									:step="1"
+									:max="3"
+									show-stops
+								/>
+							</div>
+
+							<el-input
+								style="margin-bottom: 14px"
+								type="textarea"
+								v-model="model.speakText"
+								placeholder="请输入文本"
+								:rows="2"
+							></el-input>
+
+							<el-button type="primary" @click="toSpeak('start')"
+								>识别</el-button
+							>
+							<el-button type="warning" @click="toSpeak('stop')"
+								>结束</el-button
+							>
+						</template>
+					</el-popover>
+				</div>
+			</div>
 		</div>
 	</body>
-	<script src="/scripts/index.js"></script>
-	<script src="/demos/03/index.js"></script>
+	<script>
+		const { createApp, ref, toRefs, reactive } = Vue;
+		const { ElMessage } = ElementPlus;
+
+		createApp({
+			setup() {
+				const string =
+					"路上只我一个人，背着手踱着。这一片天地好像是我的;我也像超出了平常旳自己，到了另一世界里。";
+				const text = ref(string.replace(/\s|\r|\n|\t/g, ""));
+
+				const langs = ref(window.speechSynthesis.getVoices());
+
+				// 响应式状态
+				const model = reactive({
+					// 语音合成
+					lang: "zh-CN",
+					pitch: 1,
+					rate: 1,
+					voice: "zh-CN",
+					volume: 1,
+
+					// 语音识别
+					continuous: false,
+					interimResults: false,
+					maxAlternatives: 1,
+					speakText: "",
+				});
+
+				const utterance = ref();
+
+				const toSetting = () => {
+					langs.value = window.speechSynthesis.getVoices();
+				};
+
+				const toVoice = type => {
+					utterance.value = new SpeechSynthesisUtterance(text.value);
+					utterance.value.lang = model.lang;
+					utterance.value.pitch = model.pitch;
+					utterance.value.rate = model.rate;
+					utterance.value.voice =
+						langs.value.find(i => i.lang === model.voice) || null;
+					utterance.value.volume = model.volume;
+					window.speechSynthesis[type](utterance.value);
+				};
+				const speechRecognition = new webkitSpeechRecognition();
+
+				const toSpeak = type => {
+					// 语言
+					speechRecognition.lang = model.lang || "en-US";
+					// 控制每次识别是返回连续结果，还是只返回单个结果
+					speechRecognition.continuous = model.continuous;
+					// 控制是否应返回临时结果（true）或不（false）临时结果是尚未最终的结果
+					speechRecognition.interimResults = model.interimResults;
+					//置每个结果提供的最大数
+					speechRecognition.maxAlternatives = 1;
+					model.speakText = "";
+					speechRecognition.onresult = function (event) {
+						model.speakText = event.results[0][0].transcript;
+					};
+					speechRecognition.onerror = function (error) {
+						ElMessage.error(error.message || "该浏览器不支持");
+					};
+
+					speechRecognition[type]();
+				};
+
+				return {
+					string,
+					text,
+					langs,
+					model,
+					utterance,
+					toSetting,
+					toVoice,
+					toSpeak,
+				};
+			},
+		})
+			.use(ElementPlus)
+			.mount("#app");
+	</script>
 </html>
