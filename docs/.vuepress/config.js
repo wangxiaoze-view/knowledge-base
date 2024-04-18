@@ -75,6 +75,10 @@ module.exports = {
 						text: "Git",
 						link: "/pages/60296d/",
 					},
+					{
+						text: "面试题",
+						link: "/pages/c51072/",
+					},
 				],
 			},
 			{
