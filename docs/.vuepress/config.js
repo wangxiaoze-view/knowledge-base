@@ -129,7 +129,7 @@ module.exports = {
 					},
 					{
 						text: "小说",
-						link: "/pages/59f6b2/",
+						link: "/pages/66f179/",
 					},
 					{
 						text: "公告",
