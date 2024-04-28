@@ -1,0 +1,86 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+button{
+  width: 140px;
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition-duration: 1s;
+  font-size: 16px;
+  margin: 14px 0 0 14px;
+  letter-spacing: 1px;
+}
+
+
+/* Button 1 */
+.btn-1 {
+  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-size: 300%;
+  background-position: right;
+  position: relative;
+  color: #b12a5b;
+}
+.btn-1:hover {
+  background-position: left;
+  transition-duration: 1s;
+}
+
+/* Button 2 */
+.btn-2 {
+  --x: 0.6;
+  --y: calc(var(--x) * 2);
+  background: #111;
+  color: #DCD9D4;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 10px #3b3b3b, inset 0 0 10px rgb(158, 155, 155);
+}
+.btn-2:hover {
+  animation: btn2 0.5s ease-in-out;
+}
+@keyframes btn2 {
+  0% {
+    transform: scale(--var(--x), var(--y));
+  }
+  25% {
+    transform: scale(var(--y), var(--x));
+  }
+  50% {
+    transform: scale(--var(--x), var(--y));
+  }
+  75% {
+    transform: scale(var(--y), var(--x));
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* BUTTON 3 */
+.btn-3 {
+  color: #111;
+  position: relative;
+}
+.btn-3::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #111;
+  transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-3:hover::after {
+  width: 100%;
+  left: 0%;
+}
