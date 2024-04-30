@@ -64,6 +64,10 @@ module.exports = {
 						link: "/pages/96c357/",
 					},
 					{
+						text: "Vue",
+						link: "/pages/c51072/",
+					},
+					{
 						text: "工程化",
 						link: "/pages/3c293c/",
 					},
@@ -74,10 +78,6 @@ module.exports = {
 					{
 						text: "Git",
 						link: "/pages/60296d/",
-					},
-					{
-						text: "面试题",
-						link: "/pages/c51072/",
 					},
 				],
 			},
