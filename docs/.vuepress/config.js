@@ -21,11 +21,20 @@ module.exports = {
 		["meta", { name: "keywords", content: "vuepress,theme,blog" }],
 		["meta", { name: "theme-color", content: "#11a8cd" }], // 移动浏览器主题颜色
 
+		// 百度联盟
 		[
 			"meta",
 			{
 				name: "baidu_union_verify",
 				content: "cb3bdee510c2883df3872a41a8092e2c",
+			},
+		],
+		// 谷歌广告
+		[
+			"meta",
+			{
+				name: "google-adsense-account",
+				content: "ca-pub-1298654158984505",
 			},
 		],
 		[
@@ -40,7 +49,7 @@ module.exports = {
 				s.parentNode.insertBefore(hm, s);
 			})();
 		`,
-		], //
+		],
 	],
 
 	// 主题配置
