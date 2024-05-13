@@ -91,62 +91,6 @@ module.exports = {
 				],
 			},
 			{
-				text: "后端",
-				link: "/pages/9cb243/",
-				items: [
-					{
-						text: "Nest",
-						link: "/pages/9cb243/",
-					},
-				],
-			},
-			{
-				text: "移动端",
-				link: "/pages/9039b2/",
-				items: [
-					{
-						text: "鸿蒙",
-						link: "/pages/9039b2/",
-					},
-					{
-						text: "Flutter",
-						link: "/pages/b94f8b/",
-					},
-					{
-						text: "H5",
-						link: "/pages/d655a5/",
-					},
-				],
-			},
-			{
-				text: "桌面端",
-				link: "/pages/0ea9d1/",
-				items: [
-					{
-						text: "Electron",
-						link: "/pages/0ea9d1/",
-					},
-				],
-			},
-			{
-				text: "生活",
-				link: "/pages/c81370/",
-				items: [
-					{
-						text: "日常",
-						link: "/pages/c81370/",
-					},
-					{
-						text: "小说",
-						link: "/pages/66f179/",
-					},
-					{
-						text: "公告",
-						link: "/pages/bf73f1/",
-					},
-				],
-			},
-			{
 				text: "案例",
 				link: "/pages/e3c66c/",
 				items: [
@@ -172,6 +116,47 @@ module.exports = {
 					},
 				],
 			},
+			{
+				text: "其他",
+				link: "/pages/9cb243/",
+				items: [
+					{
+						text: "Nest",
+						link: "/pages/9cb243/",
+					},
+					{
+						text: "移动端",
+						link: "/pages/9039b2/",
+					},
+					{
+						text: "桌面端",
+						link: "/pages/0ea9d1/",
+					},
+					{
+						text: "three",
+						link: "/pages/647027/",
+					},
+				],
+			},
+			{
+				text: "生活",
+				link: "/pages/c81370/",
+				items: [
+					{
+						text: "日常",
+						link: "/pages/c81370/",
+					},
+					{
+						text: "小说",
+						link: "/pages/66f179/",
+					},
+					{
+						text: "公告",
+						link: "/pages/bf73f1/",
+					},
+				],
+			},
+
 			{ text: "赞助", link: "/pages/1a52d7/" },
 		],
 		sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
