@@ -5,7 +5,7 @@ module.exports = {
 	theme: "vdoing", // 使用依赖包主题
 	// theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/wangxiaoze-view/vuepress-theme-vdoing)
 
-	title: "knowledge base",
+	title: "前端日记 | knowledge base",
 	description: "整理个人工作生活的知识",
 
 	// base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -221,7 +221,10 @@ module.exports = {
 		footer: {
 			// 页脚信息
 			createYear: 2023, // 博客创建年份
-			copyrightInfo: "wangxiaoze | MIT License", // 博客版权信息，支持a标签
+			copyrightInfo: `wangxiaoze | MIT License
+				<div style="display:flex;align-items:center;font-weight:600;flex-wrap:wrap;justify-content:center;">
+				<a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left:10px;">备案号： 晋ICP备2022011771号-1</a>
+				</div>`, // 博客版权信息，支持a标签
 		},
 		htmlModules,
 
