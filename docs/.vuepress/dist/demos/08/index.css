@@ -1,0 +1,100 @@
+.container {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  user-select: none;
+}
+
+.grid-item {
+  background-color: #ccc;
+  text-align: center;
+  height: 200px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.grid-item:hover>div,
+.grid-item:hover>img,
+.grid-item:hover>.title {
+  animation: identifier 0.7s ease-in;
+}
+
+@keyframes identifier {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  45%,
+  75% {
+    transform: scale(1.5);
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  padding: 6px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.error-image {
+  width: 100%;
+  height: 100%;
+  background-image: url('error-image.png'),
+    url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.before-class::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  background-image: url('https://qiniu.wangxiaoze.wang/hexo-blog/default_top_img.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.before-class::after {
+  content: attr(alt);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  padding: 6px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  padding: 6px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/styles/common.css" />
+		<link rel="stylesheet" href="/demos/11/index.css" />
+	</head>
+	<body>
+		<div>
+			<select name="" id="province" onchange="onChangeProvince()">
+				<option value="">请选择省</option>
+			</select>
+			<select name="" id="city" onchange="onChangeCity()">
+				<option value="">请选择市</option>
+			</select>
+			<select name="" id="area" onchange="onChangeArea()">
+				<option value="">请选择区</option>
+			</select>
+		</div>
+
+		<div id="echarts"></div>
+
+		<script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script charset="utf-8" src="/scripts/index.js"></script>
+		<script src="/demos/11/city.js"></script>
+		<script src="/demos/11/index.js"></script>
+	</body>
+</html>

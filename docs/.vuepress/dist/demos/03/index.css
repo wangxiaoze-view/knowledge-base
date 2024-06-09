@@ -1,0 +1,29 @@
+[v-cloak] {
+  display: none !important;
+}
+
+.page-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.set-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .label {
+    min-width: 70px;
+  }
+}
