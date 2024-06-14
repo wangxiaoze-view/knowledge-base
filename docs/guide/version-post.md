@@ -28,7 +28,7 @@ outline: deep
 
 ### Version 2.2.0 更新内容
 
-1. 移除面试题, 将面试题整理在[前端](/pages/96c357)；否则内容会很多，导致文档的分类混乱；
+1. 移除面试题, 将面试题整理在前端；否则内容会很多，导致文档的分类混乱；
 2. 近期更新的频率和内容将以前端为主，移动端的`鸿蒙,FLutter`后端的`Nest`有时间会持续更新;
 3. 关于`Flutter`的整理：将已整理的内容放置[FlutterDemo](https://learn-flutter.wangxiaoze.wang/)网站中（如果文字显示不出来, 这是 Flutter 一个弊端, 需要等待或者挂梯子） <Badge text="网站已废弃" type="danger"/>
 4. 桌面端正在开发一个简单的`DEMO`，后续会将该`DEMO`作为开发案例进行整理
