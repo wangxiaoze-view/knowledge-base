@@ -5,3 +5,6 @@ db.json
 node_modules/
 .deploy*/
 _multiconfig.yml
+
+/*/.DS_Store
+/**/*/.DS_Store

@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{322:function(s,o,l){"use strict";l.r(o);var t={data:()=>({msg:"123"}),methods:{clickColor(){console.log(123)}}},c=l(4),n=Object(c.a)(t,(function(){return(0,this._self._c)("p",{on:{click:this.clickColor}},[this._v(this._s(this.msg))])}),[],!1,null,null,null);o.default=n.exports}}]);
