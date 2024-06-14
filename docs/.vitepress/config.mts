@@ -248,9 +248,8 @@ export default defineConfig({
 		footer: {
 			message: "wangxiaoze | MIT License.",
 			copyright: `
-				<div style="display:flex;align-items:center;font-weight:600;flex-wrap:wrap;justify-content:center;">
 				<a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left:10px;">备案号： 晋ICP备2022011771号-1</a>
-				</div>`,
+				`,
 		},
 		docFooter: {
 			prev: "上一页",
