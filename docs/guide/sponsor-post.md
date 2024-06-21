@@ -10,9 +10,9 @@ outline: deep
 
 谢谢！ :heart:
 
-| 微信                                                                                                                                | 支付宝                                                                                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| <div style="text-align: center;"><img src="https://qiniu.wangxiaoze.wang/hexo-blog/wx_pay.png" alt="Wechat QRcode" width=180></div> | <div style="text-align: center;"><img src="https://qiniu.wangxiaoze.wang/hexo-blog/zfb_pay.png" alt="Alipay QRcode" width=180></div> |
+| 微信                                                                                                                         | 支付宝                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| <div style="text-align: center;"><img src="https://file.wangzevw.com/images/wx_pay.png" alt="Wechat QRcode" width=180></div> | <div style="text-align: center;"><img src="https://file.wangzevw.com/images/zfb_pay.png" alt="Alipay QRcode" width=180></div> |
 
 ## 致谢
 

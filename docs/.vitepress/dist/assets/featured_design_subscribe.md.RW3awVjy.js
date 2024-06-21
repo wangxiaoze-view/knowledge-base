@@ -1,4 +1,15 @@
-import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.DflgEAq4.js";const F=JSON.parse('{"title":"什么是发布订阅","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"featured/design/subscribe.md","filePath":"featured/design/subscribe.md"}'),h={name:"featured/design/subscribe.md"},l=n(`<h1 id="什么是发布订阅" tabindex="-1">什么是发布订阅 <a class="header-anchor" href="#什么是发布订阅" aria-label="Permalink to &quot;什么是发布订阅&quot;">​</a></h1><p>发布订阅是一种软件设计模式和通信范式，它旨在促进不同软件组件间的松散耦合通信。在订阅发布模式中，有如下两个核心概念：</p><ol><li><strong>发布者</strong>: 负责发布信息或事件。发布者并不直接将消息发送给特定的接收者，而是将其发布到一个共享的通信媒介——通常是被称为“主题”（Topic）、“频道”（Channel）或“事件总线”（Event Bus）的中介。</li><li><strong>订阅者</strong>: 对特定类型的信息或事件感兴趣。订阅者向中介（主题或频道）表达其关注的事件类型，并提供一个回调函数（或处理器）以便在相关事件发生时得到通知。订阅者并不关心发布者是谁，也不需要了解其他订阅者的存在。</li></ol><p>就好比：</p><p>订阅者就好比手机开了个提醒，只关注感兴趣的那块新闻，比如你想知道关于足球比赛的结果，于是你对手机说: &quot;只要有关足球比赛结果出来，就立刻告诉我&quot; 这就是你向手机订阅了足球比赛的结果。</p><p>发布者就好比手机的短信，你发布一个消息，比如: &quot;今天足球比赛结果出来了，结果是：胜负平&quot;，然后手机就会把消息发送给订阅者，订阅者收到消息后，就会收到短信，然后你就知道了。</p><p>订阅者就是指定了自己关心的内容类型，然后等待这个类型的消息出现时，会收到专门的通知，而无需理会消息从哪里来，还有谁也在关注同样的消息。</p><p><img src="https://qiniu.wangxiaoze.wang/hexo-blog/d_20240426094751.png" alt="图片"></p><p>订阅发布模式，也叫发布订阅模式，是观察者模式的一种变种，观察者模式是订阅一个主题，主题会通知所有观察者，而发布订阅模式是订阅一个主题，主题会通知所有订阅者。</p><ul><li>发布者：通过事件中心派发事件</li><li>订阅者：通过事件中心进行事件的订阅</li><li>事件中心：负责存放事件和订阅者的关系.</li></ul><h2 id="代码理解" tabindex="-1">代码理解 <a class="header-anchor" href="#代码理解" aria-label="Permalink to &quot;代码理解&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">// 事件中心</span></span>
+import {
+	_ as s,
+	c as i,
+	o as a,
+	a3 as n,
+} from "./chunks/framework.DflgEAq4.js";
+const F = JSON.parse(
+		'{"title":"什么是发布订阅","description":"","frontmatter":{"outline":"deep"},"headers":[],"relativePath":"featured/design/subscribe.md","filePath":"featured/design/subscribe.md"}'
+	),
+	h = { name: "featured/design/subscribe.md" },
+	l = n(
+		`<h1 id="什么是发布订阅" tabindex="-1">什么是发布订阅 <a class="header-anchor" href="#什么是发布订阅" aria-label="Permalink to &quot;什么是发布订阅&quot;">​</a></h1><p>发布订阅是一种软件设计模式和通信范式，它旨在促进不同软件组件间的松散耦合通信。在订阅发布模式中，有如下两个核心概念：</p><ol><li><strong>发布者</strong>: 负责发布信息或事件。发布者并不直接将消息发送给特定的接收者，而是将其发布到一个共享的通信媒介——通常是被称为“主题”（Topic）、“频道”（Channel）或“事件总线”（Event Bus）的中介。</li><li><strong>订阅者</strong>: 对特定类型的信息或事件感兴趣。订阅者向中介（主题或频道）表达其关注的事件类型，并提供一个回调函数（或处理器）以便在相关事件发生时得到通知。订阅者并不关心发布者是谁，也不需要了解其他订阅者的存在。</li></ol><p>就好比：</p><p>订阅者就好比手机开了个提醒，只关注感兴趣的那块新闻，比如你想知道关于足球比赛的结果，于是你对手机说: &quot;只要有关足球比赛结果出来，就立刻告诉我&quot; 这就是你向手机订阅了足球比赛的结果。</p><p>发布者就好比手机的短信，你发布一个消息，比如: &quot;今天足球比赛结果出来了，结果是：胜负平&quot;，然后手机就会把消息发送给订阅者，订阅者收到消息后，就会收到短信，然后你就知道了。</p><p>订阅者就是指定了自己关心的内容类型，然后等待这个类型的消息出现时，会收到专门的通知，而无需理会消息从哪里来，还有谁也在关注同样的消息。</p><p><img src="https://file.wangzevw.com/images/d_20240426094751.png" alt="图片"></p><p>订阅发布模式，也叫发布订阅模式，是观察者模式的一种变种，观察者模式是订阅一个主题，主题会通知所有观察者，而发布订阅模式是订阅一个主题，主题会通知所有订阅者。</p><ul><li>发布者：通过事件中心派发事件</li><li>订阅者：通过事件中心进行事件的订阅</li><li>事件中心：负责存放事件和订阅者的关系.</li></ul><h2 id="代码理解" tabindex="-1">代码理解 <a class="header-anchor" href="#代码理解" aria-label="Permalink to &quot;代码理解&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">// 事件中心</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> EventChannel</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">	constructor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">() {</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">		this</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.subscribers </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {};</span></span>
@@ -59,4 +70,12 @@ import{_ as s,c as i,o as a,a3 as n}from"./chunks/framework.DflgEAq4.js";const F
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	eventChannel.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">publish</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;result&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, {</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">		result: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;负&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">	});</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">3000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span></span></code></pre></div>`,14),k=[l];function t(p,e,E,r,d,g){return a(),i("div",null,k)}const c=s(h,[["render",t]]);export{F as __pageData,c as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">3000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">);</span></span></code></pre></div>`,
+		14
+	),
+	k = [l];
+function t(p, e, E, r, d, g) {
+	return a(), i("div", null, k);
+}
+const c = s(h, [["render", t]]);
+export { F as __pageData, c as default };
