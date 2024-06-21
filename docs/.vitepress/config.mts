@@ -35,6 +35,7 @@ export default defineConfig({
 					{ text: "个人总结", link: "/summary/person/1" },
 				],
 			},
+			{ text: "文档", link: "https://docs.wangzevw.com" },
 		],
 
 		sidebar: {
@@ -261,9 +262,7 @@ export default defineConfig({
 		],
 		footer: {
 			message: "wangxiaoze | MIT License.",
-			copyright: `
-				<a href="https://beian.miit.gov.cn/" target="_blank" style="margin-left:10px;">备案号： 晋ICP备2022011771号-1</a>
-				`,
+			copyright: `@copyright 2023-now wangxiaoze`,
 		},
 		docFooter: {
 			prev: "上一页",
@@ -272,8 +271,8 @@ export default defineConfig({
 		search: {
 			provider: "algolia",
 			options: {
-				appId: "CBVXXU4KUE",
-				apiKey: "b45aaf13fb9b496f62a61901e30b340a",
+				appId: "",
+				apiKey: "",
 				indexName: "wangxiaoze",
 			},
 		},
