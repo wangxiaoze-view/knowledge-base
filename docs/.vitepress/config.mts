@@ -7,7 +7,7 @@ export default defineConfig({
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
-			{ text: "文档", link: "https://docs.wangxiaoze.wang" },
+			{ text: "文档", link: "https://docs.wangzevw.com" },
 			{ text: "首页", link: "/" },
 			{ text: "指南", link: "/guide/start-guide" },
 			{
@@ -23,7 +23,6 @@ export default defineConfig({
 				text: "生活",
 				items: [
 					{ text: "日常", link: "/life/daily/1" },
-					{ text: "拍摄", link: "/life/screen/1" },
 					{ text: "小说", link: "/life/novel/1" },
 				],
 			},
@@ -137,17 +136,9 @@ export default defineConfig({
 							text: `我的拿手好菜-红烧牛肉面`,
 							link: "/life/daily/6",
 						},
-					],
-				},
-			],
-
-			"/life/screen/": [
-				{
-					text: "拍摄",
-					items: [
 						{
 							text: `拍摄三要素`,
-							link: "/life/screen/1",
+							link: "/life/daily/7",
 						},
 					],
 				},
@@ -268,13 +259,13 @@ export default defineConfig({
 			prev: "上一页",
 			next: "下一页",
 		},
-		search: {
-			provider: "algolia",
-			options: {
-				appId: "",
-				apiKey: "",
-				indexName: "wangxiaoze",
-			},
-		},
+		// search: {
+		// 	provider: "algolia",
+		// 	options: {
+		// 		appId: "",
+		// 		apiKey: "",
+		// 		indexName: "wangxiaoze",
+		// 	},
+		// },
 	},
 });
