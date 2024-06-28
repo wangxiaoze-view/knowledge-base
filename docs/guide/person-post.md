@@ -23,22 +23,23 @@ outline: deep
    - [npm](https://www.npmjs.com/package/@log-reporting/core)
    - [文档说明](https://docs.wangxiaoze.wang/personal/log-reporting/v2.html)
 
-### wxzUtils <Badge type="warning" text="文档还在完善中..." />
+### wxzUtils
 
 > 个人开发的一款超简单的工具库
 
 - [Github](https://github.com/wangxiaoze-view/utilstools)
+- [文档说明](https://docs-tools.wangzevw.com/)
 
-### 项目模板 <Badge type="danger" text="不在进行开发更新" />
+### 项目模板 <Badge type="danger" text="不再进行开发更新" />
 
 > 为了避免模板项目重复开发, 统一使用模板项目， 当然包含多个设备
 
 - [Github](https://github.com/wangxiaoze-view/project-template)
 - [Github（通过 npm 命令拉取模板）](https://github.com/wangxiaoze-view/temp-pro)
 
-### demos <Badge type="danger" text="项目还未部署" />
+### Sim-Admin <Badge type="danger" text="项目紧急开发中" />
 
-> 项目还未部署
+> 一款简单的中后台管理系统， 将会`demos`项目融合成一块
 
 ### HarmonyOs-App
 
