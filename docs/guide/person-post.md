@@ -6,7 +6,7 @@ outline: deep
 
 > 本人空余时间闲暇，开发一些小工具以及项目;
 
-### log-reporting
+### log-reporting <Badge type="danger" text="推荐" />
 
 这款工具呢顾名思义就是日志上报，就是搜集客户端的一些告警报错日志到服务端，从而在服务端进行数据分析征集成客户端可视化数据面板；
 
@@ -30,16 +30,22 @@ outline: deep
 - [Github](https://github.com/wangxiaoze-view/utilstools)
 - [文档说明](https://docs-tools.wangzevw.com/)
 
-### 项目模板 <Badge type="danger" text="不再进行开发更新" />
+### 项目模板 <Badge type="warning" text="不再进行开发更新" />
 
 > 为了避免模板项目重复开发, 统一使用模板项目， 当然包含多个设备
 
 - [Github](https://github.com/wangxiaoze-view/project-template)
 - [Github（通过 npm 命令拉取模板）](https://github.com/wangxiaoze-view/temp-pro)
 
-### Sim-Admin <Badge type="danger" text="项目紧急开发中" />
+### web-demos
 
-> 一款简单的中后台管理系统， 将会`demos`项目融合成一块
+> 资源放在 gitbub，可能首次访问会慢一点
+
+- [地址](https://web-demos.wangzevw.com/)
+
+### Sim-Admin <Badge type="warning" text="项目紧急开发中" />
+
+> 一款简单的中后台管理系统
 
 ### HarmonyOs-App
 
@@ -51,4 +57,4 @@ outline: deep
 
 1. 对现在已完成的项目进行文档整理
 2. 日志上报工具实现可视化面板, 以 `nest + mongodb` 搭建后端服务 <Badge type="tip" text="计划中" />
-3. 编写一个轻量级的 `vue3` 组件库与后台管理系统 () <Badge type="tip" text="看个人时间" />
+3. 编写一个轻量级的 `vue3` 组件库与后台管理系统 (<Badge type="tip" text="看个人时间" />)
