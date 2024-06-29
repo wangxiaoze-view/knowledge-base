@@ -23,11 +23,12 @@ outline: deep
    - [npm](https://www.npmjs.com/package/@log-reporting/core)
    - [文档说明](https://docs.wangxiaoze.wang/personal/log-reporting/v2.html)
 
-### wxzUtils <Badge type="warning" text="文档还在完善中..." />
+### wxzUtils
 
 > 个人开发的一款超简单的工具库
 
 - [Github](https://github.com/wangxiaoze-view/utilstools)
+- [文档说明](https://docs-tools.wangzevw.com/)
 
 ### 项目模板 <Badge type="danger" text="不在进行开发更新" />
 
