@@ -274,13 +274,13 @@ export default defineConfig({
 			prev: "上一页",
 			next: "下一页",
 		},
-		// search: {
-		// 	provider: "algolia",
-		// 	options: {
-		// 		appId: "",
-		// 		apiKey: "",
-		// 		indexName: "wangxiaoze",
-		// 	},
-		// },
+		search: {
+			provider: "algolia",
+			options: {
+				appId: "39L9KD4UX8",
+				apiKey: "55d3697b2488fea5658b31a7ba6c7f12",
+				indexName: "wangzevw",
+			},
+		},
 	},
 });
