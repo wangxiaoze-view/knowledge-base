@@ -70,10 +70,6 @@ export default defineConfig({
 				},
 			],
 			"/featured/vue/": [
-				// {
-				// 	text: "Vue",
-				// 	items: [{ text: "个人开发", link: "/featured/vue/1" }],
-				// },
 				{
 					text: "面试题",
 					items: [
@@ -111,34 +107,13 @@ export default defineConfig({
 				{
 					text: "日常",
 					items: [
-						{
-							text: `“舍，得，放” 下之 “放”`,
-							link: "/life/daily/1",
-						},
-						{
-							text: `“舍，得，放” 下之 “舍，得”`,
-							link: "/life/daily/2",
-						},
-						{
-							text: `五年时间的蜕变, 他回来了!`,
-							link: "/life/daily/3",
-						},
-						{
-							text: `沉浸之后的总结（一）`,
-							link: "/life/daily/4",
-						},
-						{
-							text: `沉浸之后的总结（二）`,
-							link: "/life/daily/5",
-						},
-						{
-							text: `我的拿手好菜-红烧牛肉面`,
-							link: "/life/daily/6",
-						},
-						{
-							text: `拍摄三要素`,
-							link: "/life/daily/7",
-						},
+						{ text: `“舍，得，放” 下之 “放”`, link: "/life/daily/1" },
+						{ text: `“舍，得，放” 下之 “舍，得”`, link: "/life/daily/2" },
+						{ text: `五年时间的蜕变, 他回来了!`, link: "/life/daily/3" },
+						{ text: `沉浸之后的总结（一）`, link: "/life/daily/4" },
+						{ text: `沉浸之后的总结（二）`, link: "/life/daily/5" },
+						{ text: `我的拿手好菜-红烧牛肉面`, link: "/life/daily/6" },
+						{ text: `拍摄三要素`, link: "/life/daily/7" },
 					],
 				},
 			],
@@ -147,30 +122,12 @@ export default defineConfig({
 				{
 					text: "临终前的回溯",
 					items: [
-						{
-							text: `序章：生命之烛摇曳`,
-							link: "/life/novel/1",
-						},
-						{
-							text: `童年时光`,
-							link: "/life/novel/2",
-						},
-						{
-							text: `与她初识`,
-							link: "/life/novel/3",
-						},
-						{
-							text: `相离`,
-							link: "/life/novel/4",
-						},
-						{
-							text: `现实的鞭打`,
-							link: "/life/novel/5",
-						},
-						{
-							text: `我的蜕变`,
-							link: "/life/novel/6",
-						},
+						{ text: `序章：生命之烛摇曳`, link: "/life/novel/1" },
+						{ text: `童年时光`, link: "/life/novel/2" },
+						{ text: `与她初识`, link: "/life/novel/3" },
+						{ text: `相离`, link: "/life/novel/4" },
+						{ text: `现实的鞭打`, link: "/life/novel/5" },
+						{ text: `我的蜕变`, link: "/life/novel/6" },
 					],
 				},
 			],
@@ -178,46 +135,19 @@ export default defineConfig({
 				{
 					text: "项目总结",
 					items: [
-						{
-							text: `老系统升级问题总结`,
-							link: "/summary/project/1",
-						},
+						{ text: `老系统升级问题总结`, link: "/summary/project/1" },
 						{
 							text: `系统下单(重复单提示框)的异常`,
 							link: "/summary/project/2",
 						},
-						{
-							text: `图片上传之前的自定义水印`,
-							link: "/summary/project/3",
-						},
-						{
-							text: `中英文搜索按键回车事件冲突`,
-							link: "/summary/project/4",
-						},
-						{
-							text: `GridView宫格加载渲染优化`,
-							link: "/summary/project/5",
-						},
-						{
-							text: `支付中转页面`,
-							link: "/summary/project/6",
-						},
-						{
-							text: `移动端返回触发俩次`,
-							link: "/summary/project/7",
-						},
-						{
-							text: `键盘弹起底部被顶起问题`,
-							link: "/summary/project/8",
-						},
-						{
-							text: `防篡改水印`,
-							link: "/summary/project/9",
-						},
-						{
-							text: `选项卡loading`,
-							link: "/summary/project/10",
-						},
+						{ text: `图片上传之前的自定义水印`, link: "/summary/project/3" },
+						{ text: `中英文搜索按键回车事件冲突`, link: "/summary/project/4" },
+						{ text: `GridView宫格加载渲染优化`, link: "/summary/project/5" },
+						{ text: `支付中转页面`, link: "/summary/project/6" },
+						{ text: `移动端返回触发俩次`, link: "/summary/project/7" },
+						{ text: `键盘弹起底部被顶起问题`, link: "/summary/project/8" },
+						{ text: `防篡改水印`, link: "/summary/project/9" },
+						{ text: `选项卡loading`, link: "/summary/project/10" },
 					],
 				},
 			],
@@ -226,26 +156,12 @@ export default defineConfig({
 				{
 					text: "技术调研",
 					items: [
-						{
-							text: `跨端之多端系统`,
-							link: "/summary/dev/1",
-						},
-						{
-							text: `浅谈跨端技术的局限性`,
-							link: "/summary/dev/2",
-						},
-						{
-							text: `前端部署通知用户更新网站`,
-							link: "/summary/dev/3",
-						},
-						{
-							text: `发现nvm1.1.12版本的一个问题`,
-							link: "/summary/dev/4",
-						},
-						{
-							text: `记录使用1Panel遇到的问题`,
-							link: "/summary/dev/5",
-						},
+						{ text: `跨端之多端系统`, link: "/summary/dev/1" },
+						{ text: `浅谈跨端技术的局限性`, link: "/summary/dev/2" },
+						{ text: `前端部署通知用户更新网站`, link: "/summary/dev/3" },
+						{ text: `发现nvm1.1.12版本的一个问题`, link: "/summary/dev/4" },
+						{ text: `记录使用1Panel遇到的问题`, link: "/summary/dev/5" },
+						{ text: `nvm替换为fnm`, link: "/summary/dev/6" },
 					],
 				},
 			],
@@ -253,12 +169,7 @@ export default defineConfig({
 			"/summary/person/": [
 				{
 					text: "个人总结",
-					items: [
-						{
-							text: `2019-06至2022-07年度总结`,
-							link: "/summary/person/1",
-						},
-					],
+					items: [{ link: "/summary/person/1" }],
 				},
 			],
 		},
