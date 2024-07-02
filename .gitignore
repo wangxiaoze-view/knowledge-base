@@ -8,3 +8,5 @@ _multiconfig.yml
 
 /*/.DS_Store
 /**/*/.DS_Store
+
+docs/.vitepress/cache

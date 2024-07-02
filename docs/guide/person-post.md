@@ -16,12 +16,12 @@ outline: deep
    > 该版本为低版本，支支持部分功能，目前仅支持日志上报，视屏录制，但是不支持 `pv与曝光统计`
    - [Github](https://github.com/wangxiaoze-view/log-repeorting/tree/v1)
    - [npm](https://www.npmjs.com/package/log-reporting)
-   - [文档说明](https://docs.wangxiaoze.wang/personal/log-reporting/v1.html)
+   - [文档说明](https://docs.wangzevw.com/personal/log-reporting/v1.html)
 2. [@log-reporting/core](https://github.com/wxz-tools/log-reporting-server)
    > 该版本为全新版本，与 `log-reporting` 完全不同， 映射以及使用完全不一样; 在原有的基础上完全支持 `pv与曝光统计`； 在原有的基础上对资源以及性能监控进行优化; 当然有内置的 `logger, types`插件；
    - [Github](https://github.com/wangxiaoze-view/log-repeorting/tree/main)
    - [npm](https://www.npmjs.com/package/@log-reporting/core)
-   - [文档说明](https://docs.wangxiaoze.wang/personal/log-reporting/v2.html)
+   - [文档说明](https://docs.wangzevw.com/personal/log-reporting/v2.html)
 
 ### wxzUtils
 
@@ -36,6 +36,7 @@ outline: deep
 
 - [Github](https://github.com/wangxiaoze-view/project-template)
 - [Github（通过 npm 命令拉取模板）](https://github.com/wangxiaoze-view/temp-pro)
+- [文档说明](https://docs.wangzevw.com/personal/temp-pro/docs.html)
 
 ### web-demos
 
@@ -56,5 +57,5 @@ outline: deep
 ## 后期工作
 
 1. 对现在已完成的项目进行文档整理
-2. 日志上报工具实现可视化面板, 以 `nest + mongodb` 搭建后端服务 <Badge type="tip" text="计划中" />
+2. 日志上报工具实现可视化面板, 以 `nest + mongodb` 搭建后端服务 <Badge type="tip" text="看个人时间" />
 3. 编写一个轻量级的 `vue3` 组件库与后台管理系统 (<Badge type="tip" text="看个人时间" />)
