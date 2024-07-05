@@ -12,7 +12,6 @@ export default defineConfig({
 				href: "/logo.png",
 			},
 		],
-
 		[
 			"script",
 			{},
