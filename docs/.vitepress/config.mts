@@ -12,32 +12,45 @@ export default defineConfig({
 				href: "/logo.png",
 			},
 		],
+
 		[
 			"script",
 			{},
-			`<!-- Google Tag Manager -->
-			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-KJ452JQX');</script>
-			<!-- End Google Tag Manager -->`,
+			`
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-KJ452JQX");
+			`,
 		],
 		[
 			"script",
 			{},
-			`<!-- Google Tag Manager -->
-				<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-				})(window,document,'script','dataLayer','GTM-KJ452JQX');</script>
-				<!-- End Google Tag Manager -->`,
+			`
+				(function () {
+				var hm = document.createElement("noscript");
+				var iframe = document.createElement("iframe");
+				iframe.src = "https://www.googletagmanager.com/ns.html?id=GTM-KJ452JQX";
+				iframe.height = 0;
+				iframe.width = 0;
+				iframe.style.display = "none";
+				iframe.style.visibility = "hidden";
+				hm.appendChild(iframe)
+				var s = document.querySelector("#app");
+				s.parentNode.insertBefore(hm, s);
+			})();
+				`,
 		],
 		[
 			"script",
 			{},
-			`<script>
+			`
 				var _hmt = _hmt || [];
 				(function() {
 					var hm = document.createElement("script");
@@ -45,7 +58,6 @@ export default defineConfig({
 					var s = document.getElementsByTagName("script")[0]; 
 					s.parentNode.insertBefore(hm, s);
 				})();
-				</script>
 			`,
 		],
 	],

@@ -10,3 +10,4 @@ _multiconfig.yml
 /**/*/.DS_Store
 
 docs/.vitepress/cache
+docs/.vitepress/dist
