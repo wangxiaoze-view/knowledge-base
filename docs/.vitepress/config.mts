@@ -90,6 +90,7 @@ export default defineConfig({
 					{ text: "个人总结", link: "/summary/person/1" },
 				],
 			},
+			{ text: "备忘录", link: "/remark/cmd" },
 			{ text: "文档", link: "https://docs.wangzevw.com" },
 		],
 
@@ -227,6 +228,13 @@ export default defineConfig({
 				{
 					text: "个人总结",
 					items: [{ link: "/summary/person/1" }],
+				},
+			],
+
+			"/remark": [
+				{
+					text: "备忘录",
+					items: [{ text: "命令代码", link: "/remark/cmd" }],
 				},
 			],
 		},
