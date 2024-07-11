@@ -216,7 +216,8 @@ export default defineConfig({
 					items: [
 						{ text: `跨端之多端系统`, link: "/summary/dev/1" },
 						{ text: `浅谈跨端技术的局限性`, link: "/summary/dev/2" },
-						{ text: `前端部署通知用户更新网站`, link: "/summary/dev/3" },
+						{ text: `网站更新一`, link: "/summary/dev/3" },
+						{ text: `网站更新二`, link: "/summary/dev/3-1" },
 						{ text: `发现nvm1.1.12版本的一个问题`, link: "/summary/dev/4" },
 						{ text: `记录使用1Panel遇到的问题`, link: "/summary/dev/5" },
 						{ text: `nvm替换为fnm`, link: "/summary/dev/6" },
