@@ -235,7 +235,10 @@ export default defineConfig({
 			"/remark": [
 				{
 					text: "备忘录",
-					items: [{ text: "命令代码", link: "/remark/cmd" }],
+					items: [
+						{ text: "命令代码", link: "/remark/cmd" },
+						{ text: "docker命令", link: "/remark/docker" },
+					],
 				},
 			],
 		},
