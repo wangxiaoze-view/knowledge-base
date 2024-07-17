@@ -221,6 +221,7 @@ export default defineConfig({
 						{ text: `发现nvm1.1.12版本的一个问题`, link: "/summary/dev/4" },
 						{ text: `记录使用1Panel遇到的问题`, link: "/summary/dev/5" },
 						{ text: `nvm替换为fnm`, link: "/summary/dev/6" },
+						{ text: `rust-env没有继承问题`, link: "/summary/dev/7" },
 					],
 				},
 			],
