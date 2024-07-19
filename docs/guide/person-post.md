@@ -4,7 +4,7 @@ outline: deep
 
 # 个人项目
 
-> 本人空余时间闲暇，开发一些小工具以及项目;
+> 本人空余时间闲暇，开发一些小工具以及项目; [docs 文档地址](https://docs.wangzevw.com/)
 
 ### log-reporting <Badge type="danger" text="推荐" />
 
@@ -53,6 +53,14 @@ outline: deep
 > 这是一款鸿蒙 App, 当然不会涉及到业务逻辑，仅仅是布局而已；
 
 - [Github](https://github.com/wangxiaoze-view/HarmonyOs-App)
+
+### 桌面端开发工具 dev-tools
+
+> 使用 rust + vue 搭建的一款桌面端的开发工具； 目前不开源，等版本稳定之后在开源；
+
+- [mac0.0.1 版本](https://file.wangzevw.com/app/dev-tools/0.0.1/dev-tools_0.0.1_aarch64.dmg)
+- [windows0.0.1 版本](https://file.wangzevw.com/app/dev-tools/0.0.1/dev-tools_0.0.1_x64-setup.exe)
+- [文档](https://docs.wangzevw.com/personal/dev-tools/info.html)
 
 ## 后期工作
 
