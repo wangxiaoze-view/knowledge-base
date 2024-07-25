@@ -229,7 +229,10 @@ export default defineConfig({
 			"/summary/person/": [
 				{
 					text: "个人总结",
-					items: [{ link: "/summary/person/1" }],
+					items: [
+						{ text: "2019.06 - 2022-07", link: "/summary/person/1" },
+						{ text: "2022-08 - 2024-07", link: "/summary/person/2" },
+					],
 				},
 			],
 
