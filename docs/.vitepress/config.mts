@@ -92,6 +92,7 @@ export default defineConfig({
 			},
 			{ text: "备忘录", link: "/remark/cmd" },
 			{ text: "文档", link: "https://docs.wangzevw.com" },
+			{ text: "Demos", link: "https://demos.wangzevw.com" },
 		],
 
 		sidebar: {
