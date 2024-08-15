@@ -40,7 +40,7 @@ outline: deep
 
 ### demos
 
-> 资源放在 gitbub，可能首次访问会慢一点
+> 资源放在 github，可能首次访问会慢一点
 
 - [地址](https://demos.wangzevw.com/)
 
