@@ -24,7 +24,7 @@ outline: deep
 
 1. `nest, 移动端, 桌面端`是很少更新系列(个人兴趣), 移动到`其他`模块
 2. 在`其他`模块中, 添加`three`的学习
-3. 添加[web-demos](https://web-demos.wangxiaoze.wang/)个人总结的`Demos`<Badge text="网站已废弃" type="danger"/>
+3. 添加[demos](https://demos.wangxiaoze.wang/)个人总结的`Demos`<Badge text="网站已废弃" type="danger"/>
 
 ### Version 2.2.0 更新内容
 

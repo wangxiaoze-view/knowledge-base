@@ -38,11 +38,11 @@ outline: deep
 - [Github（通过 npm 命令拉取模板）](https://github.com/wangxiaoze-view/temp-pro)
 - [文档说明](https://docs.wangzevw.com/personal/temp-pro/docs.html)
 
-### web-demos
+### demos
 
 > 资源放在 gitbub，可能首次访问会慢一点
 
-- [地址](https://web-demos.wangzevw.com/)
+- [地址](https://demos.wangzevw.com/)
 
 ### Sim-Admin <Badge type="warning" text="项目紧急开发中" />
 
