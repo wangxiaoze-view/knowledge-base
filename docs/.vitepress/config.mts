@@ -223,6 +223,7 @@ export default defineConfig({
 						{ text: `记录使用1Panel遇到的问题`, link: "/summary/dev/5" },
 						{ text: `nvm替换为fnm`, link: "/summary/dev/6" },
 						{ text: `rust-env没有继承问题`, link: "/summary/dev/7" },
+						{ text: `开发远程组件的介绍`, link: "/summary/dev/8" },
 					],
 				},
 			],
