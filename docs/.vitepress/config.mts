@@ -244,6 +244,7 @@ export default defineConfig({
 					items: [
 						{ text: "命令代码", link: "/remark/cmd" },
 						{ text: "docker命令", link: "/remark/docker" },
+						{ text: "git命令", link: "/remark/git" },
 					],
 				},
 			],
