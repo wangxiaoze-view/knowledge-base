@@ -62,13 +62,11 @@ outline: deep
 - [windows0.0.1 版本](https://file.wangzevw.com/app/dev-tools/0.0.1/dev-tools_0.0.1_x64-setup.exe)
 - [文档](https://docs.wangzevw.com/personal/dev-tools/info.html)
 
-### 远程组件 remote-components
+### 远程组件 remote-components-lib
 
 > 远程组件的使用场景很简单，就是多个平台端需要使用同一份代码，但是由于平台差异，需要做兼容处理，那么就可以使用远程组件，只需要在 `main.ts` 中进行注册即可；
 
-> 目前已完成`v1.0`的出版，待开源
-
-<Badge type="danger" text="目前还在开发中" />
+- [文档](https://docs.wangzevw.com/personal/remote-components-lib/info.html)
 
 ## 后期工作
 
