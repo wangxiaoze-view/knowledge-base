@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 命令备忘录
 
 ::: info

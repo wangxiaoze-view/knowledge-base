@@ -14,9 +14,9 @@ outline: deep
 
 之后就出现了各式各样的工程化，比如：代码格式化的风格，检验代码的格式，代码压缩与混淆等等；
 
-这样的一个好处就是做到统一，之后的开发全都是以这个为标准；关于如何规范化搭建项目可以参考之前的文章[Vue 项目搭建](/featured/project/1)
+这样的一个好处就是做到统一，之后的开发全都是以这个为标准；关于如何规范化搭建项目可以参考之前的文章[Vue 项目搭建](/brochure/project/product/init_vue)
 
-通过`webpack5`搭建的`vue3`的项目如何优化呢？ 这里具体说明打包优化; 一些优化的方案可参考[从哪些方面进行性能优化](/featured/project/3)
+通过`webpack5`搭建的`vue3`的项目如何优化呢？ 这里具体说明打包优化; 一些优化的方案可参考[从哪些方面进行性能优化](/brochure/project/direction/direction)
 
 ## 简单了解 Webpack
 
@@ -250,7 +250,7 @@ module.exports = defineConfig({
 }
 ```
 
-这样的话一些基础的公共模块就会被抽离出来， 这样在打包的时候， 就不会生成多个公共模块了。 具体的参数配置可参考文档 p[webpack](https://webpack.docschina.org/)
+这样的话一些基础的公共模块就会被抽离出来， 这样在打包的时候， 就不会生成多个公共模块了。 具体的参数配置可参考文档 [webpack](https://webpack.docschina.org/)
 
 ## 插件
 

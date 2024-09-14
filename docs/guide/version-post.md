@@ -14,7 +14,11 @@ outline: deep
 
 接下来大致说一下更新的内容：
 
-### Version 3.0.0 更新内容 <Badge text="当前版本" type="tip"/>
+### Version 3.1.0 更新内容 <Badge text="当前版本" type="tip"/>
+
+1. 目录重新调整，将前端知识内容移动到[`前端小册`](/brochure/info)模块下；
+
+### Version 3.0.0 更新内容
 
 1. 网站由 `vuepress` 更新成 `vitepress`
 2. 摒弃花里胡哨的主题样式(太过沉重), 以原生原味的形式展示文档内容
@@ -24,7 +28,7 @@ outline: deep
 
 1. `nest, 移动端, 桌面端`是很少更新系列(个人兴趣), 移动到`其他`模块
 2. 在`其他`模块中, 添加`three`的学习
-3. 添加[demos](https://demos.wangxiaoze.wang/)个人总结的`Demos`<Badge text="网站已废弃" type="danger"/>
+3. 添加[demos](https://demos.wangzevw.com/)个人总结的`Demos`
 
 ### Version 2.2.0 更新内容
 
