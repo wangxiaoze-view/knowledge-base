@@ -30,10 +30,7 @@ export default {
 			items: [
 				{
 					text: "元素",
-					items: [
-						{ text: "html", link: "/brochure/html/ele/info" },
-						{ text: "h1-h6 标题", link: "/brochure/html/ele/h1_h6" },
-					],
+					items: [{ text: "基础标签", link: "/brochure/html/ele/base_tag" }],
 				},
 			],
 		},
