@@ -17,6 +17,12 @@ export default defineConfig({
 				href: "/logo.png",
 			},
 		],
+		// [
+		// 	"script",
+		// 	{
+		// 		src: '<script defer src="https://cloud.umami.is/script.js" data-website-id="63e283e0-9946-4f12-a732-c0e74a121289"></script>',
+		// 	},
+		// ],
 
 		[
 			"script",

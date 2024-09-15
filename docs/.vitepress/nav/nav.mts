@@ -33,4 +33,8 @@ export default [
 			{ text: "Demos", link: "https://demos.wangzevw.com" },
 		],
 	},
+	{
+		text: "统计",
+		link: "https://cloud.umami.is/share/7Bi247srU4GxkQlV/www.wangzevw.com",
+	},
 ];
