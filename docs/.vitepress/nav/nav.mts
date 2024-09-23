@@ -6,6 +6,10 @@ export default [
 		link: "/brochure/info",
 	},
 	{
+		text: "工作总结",
+		link: "/work/summary/project/1",
+	},
+	{
 		text: "生活日记",
 		link: "/life/info",
 	},

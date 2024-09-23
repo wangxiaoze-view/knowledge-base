@@ -117,6 +117,21 @@ export default {
 			],
 		},
 		{
+			text: "Nest",
+			items: [
+				{
+					text: "课余积累",
+					items: [
+						{ text: "初识", link: "/brochure/nest/base/info" },
+						{ text: "入手Demo", link: "/brochure/nest/base/demo" },
+						{ text: "加载环境文件", link: "/brochure/nest/base/reform" },
+						{ text: "中间件", link: "/brochure/nest/base/middleware" },
+						{ text: "请求拦截器", link: "/brochure/nest/base/interceptor" },
+					],
+				},
+			],
+		},
+		{
 			text: "Git版本控制",
 			items: [
 				{
@@ -138,65 +153,67 @@ export default {
 			],
 		},
 	],
-
-	"/life": [
-		{ text: "介绍", link: "/life/info" },
+	"/work": [
 		{
-			text: "总结",
+			text: "工作总结",
 			items: [
 				{
 					text: "项目总结",
 					items: [
-						{ text: `老系统升级问题总结`, link: "/life/summary/project/1" },
+						{ text: `老系统升级问题总结`, link: "/work/summary/project/1" },
 						{
 							text: `系统下单(重复单提示框)的异常`,
-							link: "/life/summary/project/2",
+							link: "/work/summary/project/2",
 						},
 						{
 							text: `图片上传之前的自定义水印`,
-							link: "/life/summary/project/3",
+							link: "/work/summary/project/3",
 						},
 						{
 							text: `中英文搜索按键回车事件冲突`,
-							link: "/life/summary/project/4",
+							link: "/work/summary/project/4",
 						},
 						{
 							text: `GridView宫格加载渲染优化`,
-							link: "/life/summary/project/5",
+							link: "/work/summary/project/5",
 						},
-						{ text: `支付中转页面`, link: "/life/summary/project/6" },
-						{ text: `移动端返回触发俩次`, link: "/life/summary/project/7" },
-						{ text: `键盘弹起底部被顶起问题`, link: "/life/summary/project/8" },
-						{ text: `防篡改水印`, link: "/life/summary/project/9" },
-						{ text: `选项卡loading`, link: "/life/summary/project/10" },
+						{ text: `支付中转页面`, link: "/work/summary/project/6" },
+						{ text: `移动端返回触发俩次`, link: "/work/summary/project/7" },
+						{ text: `键盘弹起底部被顶起问题`, link: "/work/summary/project/8" },
+						{ text: `防篡改水印`, link: "/work/summary/project/9" },
+						{ text: `选项卡loading`, link: "/work/summary/project/10" },
 					],
 				},
 				{
 					text: "技术调研",
 					items: [
-						{ text: `跨端之多端系统`, link: "/life/summary/dev/1" },
-						{ text: `浅谈跨端技术的局限性`, link: "/life/summary/dev/2" },
-						{ text: `网站更新一`, link: "/life/summary/dev/3" },
-						{ text: `网站更新二`, link: "/life/summary/dev/3-1" },
+						{ text: `跨端之多端系统`, link: "/work/summary/dev/1" },
+						{ text: `浅谈跨端技术的局限性`, link: "/work/summary/dev/2" },
+						{ text: `网站更新一`, link: "/work/summary/dev/3" },
+						{ text: `网站更新二`, link: "/work/summary/dev/3-1" },
 						{
 							text: `发现nvm1.1.12版本的一个问题`,
-							link: "/life/summary/dev/4",
+							link: "/work/summary/dev/4",
 						},
-						{ text: `记录使用1Panel遇到的问题`, link: "/life/summary/dev/5" },
-						{ text: `nvm替换为fnm`, link: "/life/summary/dev/6" },
-						{ text: `rust-env没有继承问题`, link: "/life/summary/dev/7" },
-						{ text: `开发远程组件的介绍`, link: "/life/summary/dev/8" },
+						{ text: `记录使用1Panel遇到的问题`, link: "/work/summary/dev/5" },
+						{ text: `nvm替换为fnm`, link: "/work/summary/dev/6" },
+						{ text: `rust-env没有继承问题`, link: "/work/summary/dev/7" },
+						{ text: `开发远程组件的介绍`, link: "/work/summary/dev/8" },
 					],
 				},
 				{
 					text: "个人总结",
 					items: [
-						{ text: "2019.06 - 2022-07", link: "/life/summary/person/1" },
-						{ text: "2022-08 - 2024-07", link: "/life/summary/person/2" },
+						{ text: "2019.06 - 2022-07", link: "/work/summary/person/1" },
+						{ text: "2022-08 - 2024-07", link: "/work/summary/person/2" },
 					],
 				},
 			],
 		},
+	],
+
+	"/life": [
+		{ text: "介绍", link: "/life/info" },
 		{
 			text: "趣记",
 			items: [
