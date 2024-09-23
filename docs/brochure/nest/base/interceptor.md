@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 介绍
 
 ::: tip
