@@ -122,17 +122,23 @@ export function getMessage(options: IMessage) {
 
 ### 全局使用
 
-在`app.module.ts`中添加如下：
+#### 在`app.module.ts`中添加如下：
 
 ```ts
 @Module({
   providers: [
     {
-      provide: APP_FILTER,
+      provide: APP_INTERCEPTOR,
       useClass: InterceptorInterceptor,
     },
   ]
 })
+```
+
+#### 在`main.ts`中使用:
+
+```ts
+app.useGlobalInterceptors(new InterceptorInterceptor());
 ```
 
 ### 局部使用
