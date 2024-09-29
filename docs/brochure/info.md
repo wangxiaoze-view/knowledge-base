@@ -14,11 +14,16 @@ outline: deep
 
 小册内容总结的范围大致为：
 
-- **前端三件套，基础的 `html/css/js` 知识**
+- ~~**前端三件套，基础的 `html/css/js` 知识**~~ **过于基础, 不再进行总结,也没有太多时间精力去总结**
+
+  - [html 基础](https://www.w3schools.com/html/default.asp)
+  - [css 基础](https://www.w3schools.com/css/default.aspp)
+  - [js 基础](https://www.w3schools.com/js/default.aspp)
+
 - **`http`的基础网络相关知识**
 - **`vue`基础，部分面试题以及项目整合**
 - **`vite与webpack构建工具`项目管理，前端项目的开发规范**
-- **`nest/node + mongo`服务端介绍**
+- **`nest/node + mongo`服务端介绍** [<Badge type="warning" text="已完结, 点击阅读" />](/brochure/nest/base/info)
 - **`服务端部署`，使用可视化面板`宝塔和1Panel`面板实现前端项目部署上线**
 - **不定时更新其他其它...**
 

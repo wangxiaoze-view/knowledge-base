@@ -259,4 +259,89 @@ br 标签，用于在网页中添加换行符，例如：
 
 ## 图像
 
-待整理...
+使用`<img/>`可以在网页中嵌入图片，图像一般有俩个必填的参数
+
+- src：图片地址, 可以是本地地址也可以是网络资源
+- alt：图片描述，图片的描述，当图片不存在的时候会显示
+
+图像还支持宽度和高度
+
+```html
+<img src="xxxx" alt="" width="100" height="100" />
+```
+
+不过不建议这样去写宽度和高度， 因为图片加载的时候，会根据宽度和高度去计算图片的宽高，导致图片加载时间过长。
+可以使用 CSS 来设置图片的宽度和高度，例如：
+
+```css
+img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}
+```
+
+## 表格
+
+详细介绍请看文档：[列表](https://www.w3schools.com/html/html_tables.asp)
+
+```html
+<table>
+	<!-- 定义表格标题 -->
+	<caption>
+		Monthly savings
+	</caption>
+	<!-- 规定表中一个或多个列的组以进行格式化 -->
+	<colgroup>
+		<col />
+		<col />
+		<col />
+	</colgroup>
+	<!-- 将表头内容分组到表中 -->
+	<thead>
+		<tr>
+			<th>Person 1</th>
+			<th>Person 2</th>
+			<th>Person 3</th>
+		</tr>
+	</thead>
+	<!-- 将正文内容分组到表格中 -->
+	<tbody>
+		<tr>
+			<td>Emil</td>
+			<td>Tobias</td>
+			<td>Linus</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>14</td>
+			<td>10</td>
+		</tr>
+	</tbody>
+	<!-- 将页脚内容分组到表格中 -->
+	<tfoot></tfoot>
+</table>
+```
+
+## 列表
+
+详细介绍请看文档：[列表](https://www.w3schools.com/html/html_lists.asp)
+
+```html
+<ol>
+	<li>Coffee</li>
+	<li>Tea</li>
+</ol>
+
+<ul>
+	<li>Coffee</li>
+	<li>Tea</li>
+</ul>
+
+<dl>
+	<dt>Coffee</dt>
+	<dd>- black hot drink</dd>
+	<dt>Milk</dt>
+	<dd>- white cold drink</dd>
+</dl>
+```

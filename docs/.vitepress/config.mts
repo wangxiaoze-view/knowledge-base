@@ -18,6 +18,7 @@ export default defineConfig({
 			},
 		],
 
+		// google代码分析
 		[
 			"script",
 			{},
@@ -52,6 +53,7 @@ export default defineConfig({
 			})();
 				`,
 		],
+		// 百度统计
 		[
 			"script",
 			{},
@@ -65,6 +67,7 @@ export default defineConfig({
 				})();
 			`,
 		],
+		// 统计
 		[
 			"script",
 			{},

@@ -111,7 +111,10 @@ export default {
 							text: "webpack打包优化",
 							link: "/brochure/project/direction/webpack_direction",
 						},
-						,
+						{
+							text: "webpack打包优化(老版本)",
+							link: "/brochure/project/direction/webpack_direction_old",
+						},
 					],
 				},
 			],
@@ -136,6 +139,18 @@ export default {
 						{ text: "路由守卫", link: "/brochure/nest/base/canActive" },
 						{ text: "拦截器", link: "/brochure/nest/base/interceptors" },
 						{ text: "其他配置", link: "/brochure/nest/base/others" },
+					],
+				},
+			],
+		},
+		{
+			text: "服务器部署",
+			items: [
+				{
+					text: "运营",
+					items: [
+						{ text: "宝塔面板", link: "/brochure/server/operations/baoTa" },
+						{ text: "pm2", link: "/brochure/server/operations/pm2" },
 					],
 				},
 			],
