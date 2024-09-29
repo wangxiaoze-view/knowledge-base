@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
 import nav from "./nav/nav.mts";
 import sidebar from "./nav/sidebar.mts";
+import timeline from "vitepress-markdown-timeline";
+
 import {
 	containerPreview,
 	componentPreview,
@@ -112,6 +114,7 @@ export default defineConfig({
 	},
 	markdown: {
 		config(md) {
+			md.use(timeline);
 			md.use(containerPreview);
 			md.use(componentPreview);
 		},

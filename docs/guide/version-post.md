@@ -14,30 +14,38 @@ outline: deep
 
 接下来大致说一下更新的内容：
 
-### Version 3.1.0 更新内容 <Badge text="当前版本" type="tip"/>
+::: timeline Version 3.1.0 更新内容 <Badge text="当前版本" type="tip"/>
 
 1. 目录重新调整，将前端知识内容移动到[`前端小册`](/brochure/info)模块下；
 
-### Version 3.0.0 更新内容
+:::
+
+::: timeline Version 3.0.0 更新内容
 
 1. 网站由 `vuepress` 更新成 `vitepress`
 2. 摒弃花里胡哨的主题样式(太过沉重), 以原生原味的形式展示文档内容
 3. <Badge text="废弃部分旧文档,nest, 桌面端，移动端不再进行整理更新;" type="danger"/>
 
-### Version 2.3.0 更新内容
+:::
+
+::: timeline Version 2.3.0 更新内容
 
 1. `nest, 移动端, 桌面端`是很少更新系列(个人兴趣), 移动到`其他`模块
 2. 在`其他`模块中, 添加`three`的学习
 3. 添加[demos](https://demos.wangzevw.com/)个人总结的`Demos`
 
-### Version 2.2.0 更新内容
+:::
+
+::: timeline Version 2.2.0 更新内容
 
 1. 移除面试题, 将面试题整理在前端；否则内容会很多，导致文档的分类混乱；
 2. 近期更新的频率和内容将以前端为主，移动端的`鸿蒙,FLutter`后端的`Nest`有时间会持续更新;
 3. 关于`Flutter`的整理：将已整理的内容放置[FlutterDemo](https://learn-flutter.wangxiaoze.wang/)网站中（如果文字显示不出来, 这是 Flutter 一个弊端, 需要等待或者挂梯子） <Badge text="网站已废弃" type="danger"/>
 4. 桌面端正在开发一个简单的`DEMO`，后续会将该`DEMO`作为开发案例进行整理
 
-### Version 2.1.0 更新内容
+:::
+
+::: timeline Version 2.1.0 更新内容
 
 1. 添加了部分`Demos`,可在网站中访问，可以在新标签页查看;
 2. 删除`vdoing`主题自带的广告插件;
@@ -45,7 +53,9 @@ outline: deep
 4. 文档有很多同一天发布的, 那是将原来的网站内容进行迁移;
 5. 添加前端部分面试题;
 
-### Version 2.0.0 更新内容
+:::
+
+::: timeline Version 2.0.0 更新内容
 
 1. 脱离服务端，采用`GitHub`和`Gitee`进行托管；
 2. 优化网站性能，使用`CDN`进行加速；
@@ -55,7 +65,9 @@ outline: deep
 6. 添加个人的一些项目，涉及到前后端移动端等等；添加搜集的一些网站：图片转换网站，文档处理网站等等
 7. 网站迁移，底层`hexo`修改为`vuepress`
 
-### Version 1.0.0 更新内容
+:::
+
+::: timeline Version 1.0.0 更新内容
 
 1. 网站脱离单一文档流的特性，采用多样化管理；
 2. 采用[`Hexo`](https://hexo.io/zh-cn/index.html)静态搭建，使用[`Butterfly-github`](https://github.com/jerryc127/hexo-theme-butterfly.git), [`Butterfly-gitee`](https://gitee.com/immyw/hexo-theme-butterfly)主题搭配使用；
@@ -65,6 +77,8 @@ outline: deep
 6. 添加复制内容是附加原创版权声明，并且每个页面下方标注版权；
 7. 底部添加备案表示；
 
+:::
+
 ## 主题内容
 
 本网站的主题内容将会以职场，生活方向靠近，涉及`前端技术`, `App（Flutter, uni-app）`，`服务器与后端技术`, `生活日记` 等等；
@@ -72,3 +86,4 @@ outline: deep
 ~~由于网站内容脱离动态数据，采用`mardown`格式编写，老版本网站的文档将会在近期内加快迁移；近期工作比较忙，预计`一周至半月`；~~
 
 `旧版本博客数据已经迁移至新版本中，后期文章的更新会在新版本中进行更新与发布！！！博文会不定时进行更新发布，没有固定时间，可能一个月不发布，也有可能5天发布三篇；具体看本人的时间！`
+:
