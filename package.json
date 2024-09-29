@@ -18,10 +18,8 @@
     "medium-zoom": "^1.1.0",
     "vitepress": "^1.2.3",
     "vitepress-markdown-timeline": "^1.2.1",
-    "vitepress-plugin-google-analytics": "^1.0.2",
-    "vue": "^3.4.27"
-  },
-  "dependencies": {
+    "vue": "^3.4.27",
     "sass": "^1.78.0"
-  }
+  },
+  "dependencies": {}
 }

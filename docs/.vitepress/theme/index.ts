@@ -1,25 +1,23 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from "vue";
-import type { Theme } from "vitepress";
+import { h, onMounted, watch, nextTick } from "vue";
+import { useRoute, useData, Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import "./style.css";
-import { AntDesignContainer } from "@vitepress-demo-preview/component";
-import "@vitepress-demo-preview/component/dist/style.css";
-
-import "vitepress-markdown-timeline/dist/theme/index.css";
-import googleAnalytics from "vitepress-plugin-google-analytics";
-
+import { ElementPlusContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
-import { onMounted, watch, nextTick } from "vue";
-import { useRoute } from "vitepress";
+
+import "./style.css";
+// demo
+import "@vitepress-demo-preview/component/dist/style.css";
+// 时间线
+import "vitepress-markdown-timeline/dist/theme/index.css";
 
 export default {
 	extends: DefaultTheme,
 	setup() {
+		// 图片放大
 		const route = useRoute();
 		const initZoom = () => {
-			// mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' }); // 默认
-			mediumZoom(".main img", { background: "var(--vp-c-bg)" }); // 不显式添加{data-zoomable}的情况下为所有图像启用此功能
+			mediumZoom(".main img", { background: "var(--vp-c-bg)" });
 		};
 		onMounted(() => {
 			initZoom();
@@ -29,15 +27,20 @@ export default {
 			() => nextTick(() => initZoom())
 		);
 	},
+
 	Layout: () => {
-		return h(DefaultTheme.Layout, null, {
-			// https://vitepress.dev/guide/extending-default-theme#layout-slots
-		});
+		const props: Record<string, any> = {};
+		// 获取 frontmatter
+		const { frontmatter } = useData();
+
+		/* 添加自定义 class */
+		if (frontmatter.value?.layoutClass) {
+			props.class = frontmatter.value.layoutClass;
+		}
+		return h(DefaultTheme.Layout, props);
 	},
+
 	enhanceApp({ app, router, siteData }) {
-		googleAnalytics({
-			id: "GTM-KJ452JQX", //跟踪ID，在analytics.google.com注册即可
-		}),
-			app.component("demo-preview", AntDesignContainer);
+		app.component("demo-preview", ElementPlusContainer);
 	},
 } satisfies Theme;
