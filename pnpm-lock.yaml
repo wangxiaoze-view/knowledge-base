@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      sass:
-        specifier: ^1.78.0
-        version: 1.78.0
     devDependencies:
       '@vitepress-demo-preview/component':
         specifier: ^2.3.2
@@ -21,15 +17,15 @@ importers:
       medium-zoom:
         specifier: ^1.1.0
         version: 1.1.0
+      sass:
+        specifier: ^1.78.0
+        version: 1.78.0
       vitepress:
         specifier: ^1.2.3
         version: 1.2.3(@algolia/client-search@4.24.0)(postcss@8.4.38)(sass@1.78.0)(search-insights@2.14.0)
       vitepress-markdown-timeline:
         specifier: ^1.2.1
         version: 1.2.1
-      vitepress-plugin-google-analytics:
-        specifier: ^1.0.2
-        version: 1.0.2
       vue:
         specifier: ^3.4.27
         version: 3.4.30
@@ -730,9 +726,6 @@ packages:
   vitepress-markdown-timeline@1.2.1:
     resolution: {integrity: sha512-XPYl/btTcTzW+XF20ITB51L8jPjbS72tSKPcv/CHJgM+3LbBvW8Az/X7RcBTJSXDNOwCY5mGkjA7CXQtuxOKgw==}
 
-  vitepress-plugin-google-analytics@1.0.2:
-    resolution: {integrity: sha512-ri8bFUAmt3c/DtPrALauGBIUr2gIJ11c1qNRhwd3/+aiuYZBfQpOosSxcO1AswgwRxP9FwBS6Z7jgdDVyXb2hA==}
-
   vitepress@1.2.3:
     resolution: {integrity: sha512-GvEsrEeNLiDE1+fuwDAYJCYLNZDAna+EtnXlPajhv/MYeTjbNK6Bvyg6NoTdO1sbwuQJ0vuJR99bOlH53bo6lg==}
     hasBin: true
@@ -1404,8 +1397,6 @@ snapshots:
   vitepress-markdown-timeline@1.2.1:
     dependencies:
       dayjs: 1.11.13
-
-  vitepress-plugin-google-analytics@1.0.2: {}
 
   vitepress@1.2.3(@algolia/client-search@4.24.0)(postcss@8.4.38)(sass@1.78.0)(search-insights@2.14.0):
     dependencies:

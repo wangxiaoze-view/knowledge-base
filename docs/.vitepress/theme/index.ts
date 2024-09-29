@@ -20,6 +20,8 @@ export default {
 			mediumZoom(".main img", { background: "var(--vp-c-bg)" });
 		};
 		onMounted(() => {
+			// TODO: 后期判断图片加载状态
+			// console.log(document.querySelectorAll("img"), 123);
 			initZoom();
 		});
 		watch(
