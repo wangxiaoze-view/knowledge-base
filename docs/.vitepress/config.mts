@@ -17,12 +17,6 @@ export default defineConfig({
 				href: "/logo.png",
 			},
 		],
-		// [
-		// 	"script",
-		// 	{
-		// 		src: '<script defer src="https://cloud.umami.is/script.js" data-website-id="63e283e0-9946-4f12-a732-c0e74a121289"></script>',
-		// 	},
-		// ],
 
 		[
 			"script",
@@ -67,6 +61,20 @@ export default defineConfig({
 					var hm = document.createElement("script");
 					hm.src = "https://hm.baidu.com/hm.js?da07a284a6d9edb2782b563c4763bd82";
 					var s = document.getElementsByTagName("script")[0]; 
+					s.parentNode.insertBefore(hm, s);
+				})();
+			`,
+		],
+		[
+			"script",
+			{},
+			`
+				var _hmt = _hmt || [];
+				(function() {
+					let hm = document.createElement("script");
+					hm.src = "https://cloud.umami.is/script.js";
+					hm.setAttribute("data-website-id", "63e283e0-9946-4f12-a732-c0e74a121289");
+					var s = document.getElementsByTagName("script")[0];
 					s.parentNode.insertBefore(hm, s);
 				})();
 			`,
