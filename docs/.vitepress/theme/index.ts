@@ -4,6 +4,7 @@ import { useRoute, useData, Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { ElementPlusContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
+import MNavLinks from "./components/MNavLinks.vue";
 
 import "./style.css";
 // demo
@@ -44,5 +45,6 @@ export default {
 
 	enhanceApp({ app, router, siteData }) {
 		app.component("demo-preview", ElementPlusContainer);
+		app.component("MNavLinks", MNavLinks);
 	},
 } satisfies Theme;

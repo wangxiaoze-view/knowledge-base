@@ -7,38 +7,13 @@ export default [
 	},
 	{
 		text: "前端导航",
-		link: "/webNav",
+		link: "/my-nav",
 	},
 	{
 		text: "总结",
 		items: [
 			{ text: "工作总结", link: "/work/summary/project/1" },
 			{ text: "生活日记", link: "/life/info" },
-		],
-	},
-
-	{
-		text: "个人项目",
-		items: [
-			{ text: "工具库", link: "https://docs-tools.wangzevw.com/" },
-			{
-				text: "日志上报",
-				link: "https://docs.wangzevw.com/personal/log-reporting/v2.html",
-			},
-			{
-				text: "脚手架",
-				link: "https://docs.wangzevw.com/personal/temp-pro/docs.html",
-			},
-			{
-				text: "桌面端开发工具",
-				link: "https://docs.wangzevw.com/personal/dev-tools/info.html",
-			},
-			{
-				text: "远程组件",
-				link: "https://docs.wangzevw.com/personal/remote-components-lib/info.html",
-			},
-			{ text: "文档", link: "https://docs.wangzevw.com" },
-			{ text: "Demos", link: "https://demos.wangzevw.com" },
 		],
 	},
 	{

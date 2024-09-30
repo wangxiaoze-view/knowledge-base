@@ -1,43 +1,49 @@
 {
-  "hash": "8b15ba8e",
+  "hash": "abb7fa7d",
   "configHash": "ab535e16",
-  "lockfileHash": "69ef590a",
-  "browserHash": "6f1d517b",
+  "lockfileHash": "d4e54e0d",
+  "browserHash": "cf759e61",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.4.30/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "83dbfce9",
+      "fileHash": "b1b14165",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.2.1/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "32d7e2a8",
+      "fileHash": "8b8d3ee6",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@10.11.0_vue@3.4.30/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "a9184e5c",
+      "fileHash": "79cce262",
       "needsInterop": false
     },
     "@vitepress-demo-preview/component": {
       "src": "../../../../node_modules/.pnpm/@vitepress-demo-preview+component@2.3.2_vitepress@1.2.3_@algolia+client-search@4.24.0_postcss_ljolfichtbsmur66np44ealshe/node_modules/@vitepress-demo-preview/component/dist/preview-component.js",
       "file": "@vitepress-demo-preview_component.js",
-      "fileHash": "1a77f5b0",
+      "fileHash": "bb5ada06",
       "needsInterop": false
     },
     "vitepress-plugin-google-analytics": {
       "src": "../../../../node_modules/.pnpm/vitepress-plugin-google-analytics@1.0.2/node_modules/vitepress-plugin-google-analytics/dist/index.mjs",
       "file": "vitepress-plugin-google-analytics.js",
-      "fileHash": "cd651073",
+      "fileHash": "ed5febf0",
       "needsInterop": false
     },
     "medium-zoom": {
       "src": "../../../../node_modules/.pnpm/medium-zoom@1.1.0/node_modules/medium-zoom/dist/medium-zoom.esm.js",
       "file": "medium-zoom.js",
-      "fileHash": "2bbceddb",
+      "fileHash": "ad386c40",
+      "needsInterop": false
+    },
+    "@mdit-vue/shared": {
+      "src": "../../../../node_modules/.pnpm/@mdit-vue+shared@2.1.3/node_modules/@mdit-vue/shared/dist/index.mjs",
+      "file": "@mdit-vue_shared.js",
+      "fileHash": "7a872612",
       "needsInterop": false
     }
   },
