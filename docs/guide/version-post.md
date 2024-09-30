@@ -20,6 +20,7 @@ outline: deep
 2. 添加[前端导航](/my-nav)页面，不断更新一些常用有趣的网站；
 3. 删除个人项目栏目，将其放置在[前端导航](/my-nav)
 4. 添加网站[`统计`](https://us.umami.is/share/7Bi247srU4GxkQlV/www.wangzevw.com)
+5. 将文档以及 demos 移置本网站，将取消对应的域名`docs.wangzevw.com 和 demos.wangzevw.com`
 
 :::
 
@@ -41,7 +42,7 @@ outline: deep
 
 1. `nest, 移动端, 桌面端`是很少更新系列(个人兴趣), 移动到`其他`模块
 2. 在`其他`模块中, 添加`three`的学习
-3. 添加[demos](https://demos.wangzevw.com/)个人总结的`Demos`
+3. 添加[demos](/demos/css/button/common)个人总结的`Demos`
 
 :::
 

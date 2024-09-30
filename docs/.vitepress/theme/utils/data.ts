@@ -6,26 +6,6 @@ export const NAV_DATA: NavData[] = [
 		items: [
 			{
 				icon: "https://www.wangzevw.com/logo.png",
-				title: "Demos",
-				badge: {
-					text: "个人项目",
-					type: "warning",
-				},
-				desc: "自己总结的一些Demo小功能",
-				link: "https://demos.wangzevw.com/",
-			},
-			{
-				icon: "https://www.wangzevw.com/logo.png",
-				title: "Docs",
-				badge: {
-					text: "个人文档",
-					type: "warning",
-				},
-				desc: "自己开发的工具说明文档",
-				link: "https://docs.wangzevw.com/",
-			},
-			{
-				icon: "https://www.wangzevw.com/logo.png",
 				title: "Remote-Components_Lib",
 				badge: {
 					text: "个人项目",

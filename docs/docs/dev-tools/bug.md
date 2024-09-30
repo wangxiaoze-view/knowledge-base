@@ -1,0 +1,23 @@
+# 常见问题
+
+## node 页面什么也没有如图
+
+> 那么检测到您还未配置对应的环境变量，需手动配置； [环境配置](/personal/dev-tools/env.html)
+
+![install](https://file.wangzevw.com/images/image.67xcldj0yr.webp)
+
+## 切换镜像源未更新
+
+### windows
+
+首先确认以下 `C:\Users\Administrator` 下有没有 `.npmrc` 文件，如果有，请删除 `C:\Users\Administrator` 下的 `.npmrc` 文件，然后重启 `node` 页面，即可更新镜像源。
+
+### mac/linux
+
+查看根目录， `.npmrc` 文件，如果有，请删除 `.npmrc` 文件，然后重启 `node` 页面，即可更新镜像源。`
+
+切换之后需要重启软件；
+
+## 软件打开页面闪退
+
+软件版本有问题，可卸载之后在重新安装；如果还是一样，那么请提交 [issues](https://github.com/wangxiaoze-view/dev-tools/issues)

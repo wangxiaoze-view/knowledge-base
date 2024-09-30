@@ -5,6 +5,8 @@ import DefaultTheme from "vitepress/theme";
 import { ElementPlusContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
 import MNavLinks from "./components/MNavLinks.vue";
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
 import "./style.css";
 // demo
@@ -27,20 +29,23 @@ export default {
 			for (let i = 0; i < images.length; i++) {
 				const item = images[i];
 				const src = item.src;
-				const lastIndex = src.lastIndexOf("/");
-				if (lastIndex !== -1) {
-					const end = src.substring(lastIndex, src.length);
-					item.setAttribute("data-origin", src);
-					item.setAttribute(
-						"data-github",
-						`https://github.com/wangxiaoze-view/picx-images-hosting/raw/master/images${end}`
-					);
+				if (src.indexOf("file.wangzevw.com") !== -1) {
+					const lastIndex = src.lastIndexOf("/");
+					if (lastIndex !== -1) {
+						const end = src.substring(lastIndex, src.length);
+						item.setAttribute("data-origin", src);
+						item.setAttribute(
+							"data-github",
+							`https://github.com/wangxiaoze-view/picx-images-hosting/raw/master/images${end}`
+						);
+					}
+					item.onerror = function () {
+						item.src = item.getAttribute("data-github") || "";
+					};
 				}
-				item.onerror = function () {
-					item.src = item.getAttribute("data-github") || "";
-				};
 			}
 		};
+
 		onMounted(() => {
 			imageError();
 			initZoom();
@@ -66,5 +71,6 @@ export default {
 	enhanceApp({ app, router, siteData }) {
 		app.component("demo-preview", ElementPlusContainer);
 		app.component("MNavLinks", MNavLinks);
+		app.use(ElementPlus);
 	},
 } satisfies Theme;

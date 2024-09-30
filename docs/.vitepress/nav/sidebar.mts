@@ -14,11 +14,80 @@ export default {
 				{ text: "赞助", link: "/guide/sponsor-post" },
 			],
 		},
+	],
+	"/demos": [
+		{ text: "介绍", link: "/demos/info" },
 		{
-			text: "工具",
+			text: "Css",
 			items: [
-				{ text: "个人开发", link: "/guide/person-post" },
-				{ text: "总结的工具", link: "/guide/utils-post" },
+				{ text: "按钮", link: "/demos/css/button/common" },
+				{ text: "卡片", link: "/demos/css/card/common" },
+				{ text: "css-3d", link: "/demos/css/3d/common" },
+				{ text: "图片", link: "/demos/css/image/common" },
+				{ text: "文字", link: "/demos/css/text/common" },
+				{ text: "交互", link: "/demos/css/mutual/common" },
+				{ text: "导航栏", link: "/demos/css/nav/common" },
+				{ text: "滚动", link: "/demos/css/scroll/common" },
+				{ text: "canvas", link: "/demos/css/canvas/common" },
+				{ text: "订单", link: "/demos/css/order/common" },
+			],
+		},
+		{
+			text: "JS",
+			items: [
+				{ text: "取色", link: "/demos/js/color/index" },
+				{ text: "管道通信", link: "/demos/js/channel/index" },
+				{ text: "语音合成", link: "/demos/js/speech/index" },
+			],
+		},
+		{
+			text: "3D",
+			items: [
+				{ text: "3d模型", link: "/demos/3d/models/common" },
+				{ text: "3d物体", link: "/demos/3d/object/common" },
+				{ text: "3d贴图", link: "/demos/3d/stickers/common" },
+			],
+		},
+	],
+
+	"/docs": [
+		{ text: "介绍", link: "/docs/info" },
+		{
+			text: "log-reporting",
+			items: [
+				{ text: "V1", link: "/docs/log-reporting/v1" },
+				{ text: "V2", link: "/docs/log-reporting/v2" },
+			],
+		},
+		{
+			text: "sim-admin",
+			items: [{ text: "敬请期待", link: "/docs/sim-admin/1" }],
+		},
+		{
+			text: "temp-pro",
+			items: [{ text: "如何使用", link: "/docs/temp-pro/docs" }],
+		},
+		{
+			text: "dev-tools",
+			items: [
+				{ text: "介绍", link: "/docs/dev-tools/info" },
+				{ text: "环境配置", link: "/docs/dev-tools/env" },
+				{ text: "常见问题", link: "/docs/dev-tools/bug" },
+			],
+		},
+		{
+			text: "remote-components-lib",
+			items: [
+				{ text: "介绍", link: "/docs/remote-components-lib/info" },
+				{ text: "常见问题", link: "/docs/remote-components-lib/issue" },
+				{
+					text: "Element-plus",
+					link: "/docs/remote-components-lib/element",
+				},
+				{ text: "Vant", link: "/docs/remote-components-lib/vant" },
+				{ text: "枚举", link: "/docs/remote-components-lib/enum" },
+				{ text: "hooks", link: "/docs/remote-components-lib/hooks" },
+				{ text: "utils", link: "/docs/remote-components-lib/utils" },
 			],
 		},
 	],

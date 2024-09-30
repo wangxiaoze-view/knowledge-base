@@ -19,6 +19,13 @@ export default defineConfig({
 				href: "/logo.png",
 			},
 		],
+		[
+			"link",
+			{
+				rel: "stylesheet",
+				href: "https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css",
+			},
+		],
 
 		// google代码分析
 		[
@@ -74,7 +81,6 @@ export default defineConfig({
 			"script",
 			{},
 			`
-				var _hmt = _hmt || [];
 				(function() {
 					let hm = document.createElement("script");
 					hm.src = "https://cloud.umami.is/script.js";
