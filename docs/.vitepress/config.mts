@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 import nav from "./nav/nav.mts";
 import sidebar from "./nav/sidebar.mts";
 import timeline from "vitepress-markdown-timeline";
+import { exit } from "process";
 
 import {
 	containerPreview,
@@ -11,6 +12,7 @@ import {
 export default defineConfig({
 	title: "知识库",
 	description: "知识库",
+	ignoreDeadLinks: true,
 	head: [
 		[
 			"link",
@@ -124,5 +126,8 @@ export default defineConfig({
 			md.use(containerPreview);
 			md.use(componentPreview);
 		},
+	},
+	buildEnd() {
+		exit();
 	},
 });
