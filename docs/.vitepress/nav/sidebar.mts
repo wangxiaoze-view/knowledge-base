@@ -38,6 +38,16 @@ export default {
 			text: "Javascript",
 			items: [
 				{
+					text: "基础沉淀",
+					items: [
+						{ text: "变量提升", link: "/brochure/javascript/base/var-up" },
+						{
+							text: "数据类型",
+							link: "/brochure/javascript/base/data",
+						},
+					],
+				},
+				{
 					text: "设计模式",
 					items: [
 						{

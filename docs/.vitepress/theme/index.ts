@@ -20,9 +20,29 @@ export default {
 		const initZoom = () => {
 			mediumZoom(".main img", { background: "var(--vp-c-bg)" });
 		};
+
+		// 这里的作用就是，如果图片加载失败，则使用 github 上的图片
+		const imageError = () => {
+			const images = document.querySelectorAll("img");
+			for (let i = 0; i < images.length; i++) {
+				const item = images[i];
+				const src = item.src;
+				const lastIndex = src.lastIndexOf("/");
+				if (lastIndex !== -1) {
+					const end = src.substring(lastIndex, src.length);
+					item.setAttribute("data-origin", src);
+					item.setAttribute(
+						"data-github",
+						`https://github.com/wangxiaoze-view/picx-images-hosting/raw/master/images${end}`
+					);
+				}
+				item.onerror = function () {
+					item.src = item.getAttribute("data-github") || "";
+				};
+			}
+		};
 		onMounted(() => {
-			// TODO: 后期判断图片加载状态
-			// console.log(document.querySelectorAll("img"), 123);
+			imageError();
 			initZoom();
 		});
 		watch(

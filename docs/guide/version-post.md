@@ -14,7 +14,16 @@ outline: deep
 
 接下来大致说一下更新的内容：
 
-::: timeline Version 3.1.0 更新内容 <Badge text="当前版本" type="tip"/>
+::: timeline Version 3.2.0 更新内容 <Badge text="当前版本" type="tip"/>
+
+1. 图片进行优化，支持图片大图预览；并且当原图加载失败默认使用`github`图片地址；
+2. 添加[前端导航](/my-nav)页面，不断更新一些常用有趣的网站；
+3. 删除个人项目栏目，将其放置在[前端导航](/my-nav)
+4. 添加网站[`统计`](https://us.umami.is/share/7Bi247srU4GxkQlV/www.wangzevw.com)
+
+:::
+
+::: timeline Version 3.1.0 更新内容
 
 1. 目录重新调整，将前端知识内容移动到[`前端小册`](/brochure/info)模块下；
 
