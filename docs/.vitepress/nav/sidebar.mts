@@ -341,6 +341,7 @@ export default {
 						{ text: "相离", link: "/life/novel/backtracking/4" },
 						{ text: "现实的鞭打", link: "/life/novel/backtracking/5" },
 						{ text: "我的蜕变", link: "/life/novel/backtracking/6" },
+						{ text: "步入正轨", link: "/life/novel/backtracking/7" },
 					],
 				},
 			],
