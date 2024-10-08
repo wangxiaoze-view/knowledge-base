@@ -21,3 +21,7 @@
 ## 不规则图片组合
 
 <preview path="./components/image5.vue"></preview>
+
+## 图片调色
+
+<preview path="./components/image6.vue"></preview>

@@ -26,6 +26,7 @@
     "@tresjs/cientos": "^3.9.0",
     "@tresjs/core": "^3.9.0",
     "@tresjs/leches": "^0.14.0",
+    "colorthief": "^2.4.0",
     "element-plus": "^2.8.4",
     "remote-components-lib": "file:./remote-components-lib-main",
     "three": "^0.167.1",

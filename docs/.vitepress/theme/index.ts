@@ -2,7 +2,7 @@
 import { h, onMounted, watch, nextTick } from "vue";
 import { useRoute, useData, Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { ElementPlusContainer } from "@vitepress-demo-preview/component";
+import { AntDesignContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
 import MNavLinks from "./components/MNavLinks.vue";
 import ElementPlus from "element-plus";
@@ -69,7 +69,7 @@ export default {
 	},
 
 	enhanceApp({ app, router, siteData }) {
-		app.component("demo-preview", ElementPlusContainer);
+		app.component("demo-preview", AntDesignContainer);
 		app.component("MNavLinks", MNavLinks);
 		app.use(ElementPlus);
 	},
