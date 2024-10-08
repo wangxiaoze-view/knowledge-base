@@ -25,3 +25,7 @@
 ## 图片调色
 
 <preview path="./components/image6.vue"></preview>
+
+## 蜂窝图片
+
+<preview path="./components/image7.vue"></preview>
