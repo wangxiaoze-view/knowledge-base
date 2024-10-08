@@ -38,6 +38,7 @@ export default {
 				{ text: "取色", link: "/demos/js/color/index" },
 				{ text: "管道通信", link: "/demos/js/channel/index" },
 				{ text: "语音合成", link: "/demos/js/speech/index" },
+				{ text: "视口交叉", link: "/demos/js/windowCross/index" },
 			],
 		},
 		{

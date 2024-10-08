@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 ## 滚动 timeline 相关
 
 > 简单介绍一下如何使用？

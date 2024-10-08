@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 ## 语音合成
 
 <preview path="./components/speech1.vue"></preview>
