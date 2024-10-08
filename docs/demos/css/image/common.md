@@ -28,4 +28,7 @@
 
 ## 蜂窝图片
 
+> 关于如何定位相邻坐标点位置，可参考下图：
+> ![坐标点](https://file.wangzevw.com/images/WX20241008-165721.6pnhoygy1f.webp)
+
 <preview path="./components/image7.vue"></preview>
