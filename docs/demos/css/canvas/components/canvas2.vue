@@ -32,6 +32,11 @@ const onClickToolbarItem = (item: IShapesItem) => {
 	if (type.value === Shape.CLEAN) {
 		clearCanvas();
 		type.value = "";
+		isDrawing.value = false;
+		lastX.value = 0;
+		lastY.value = 0;
+		rects.value = [];
+		circles.value = [];
 	}
 };
 
