@@ -39,6 +39,7 @@ export default {
 				{ text: "管道通信", link: "/demos/js/channel/index" },
 				{ text: "语音合成", link: "/demos/js/speech/index" },
 				{ text: "视口交叉", link: "/demos/js/windowCross/index" },
+				{ text: "粘贴板", link: "/demos/js/clipboard/index" },
 			],
 		},
 		{
