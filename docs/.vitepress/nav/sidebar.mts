@@ -125,6 +125,14 @@ export default {
 							link: "/brochure/javascript/design/subscribe",
 						},
 						{ text: "单例模式", link: "/brochure/javascript/design/singleton" },
+						{
+							text: "观察者模式",
+							link: "/brochure/javascript/design/observer",
+						},
+						{
+							text: "订阅发布与观察者区别",
+							link: "/brochure/javascript/design/subOrOb",
+						},
 					],
 				},
 			],
