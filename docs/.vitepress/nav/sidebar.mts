@@ -134,6 +134,7 @@ export default {
 							text: "订阅发布与观察者区别",
 							link: "/brochure/javascript/design/subOrOb",
 						},
+						{ text: "代理模式", link: "/brochure/javascript/design/proxy" },
 					],
 				},
 			],
