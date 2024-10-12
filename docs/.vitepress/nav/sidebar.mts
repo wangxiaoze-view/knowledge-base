@@ -188,6 +188,42 @@ export default {
 							text: "webpack与vite的区别",
 							link: "/brochure/project/engineering/webpack_vite",
 						},
+						{
+							text: ".browserslistrc",
+							link: "/brochure/project/engineering/browserslistrc",
+						},
+						{
+							text: ".editorConfig",
+							link: "/brochure/project/engineering/editorConfig",
+						},
+						{
+							text: ".env",
+							link: "/brochure/project/engineering/env",
+						},
+						{
+							text: ".git相关配置",
+							link: "/brochure/project/engineering/git",
+						},
+						{
+							text: ".prettier",
+							link: "/brochure/project/engineering/prettier",
+						},
+						{
+							text: ".eslint",
+							link: "/brochure/project/engineering/eslint",
+						},
+						{
+							text: ".stylelint",
+							link: "/brochure/project/engineering/stylelint",
+						},
+						{
+							text: ".husky",
+							link: "/brochure/project/engineering/husky",
+						},
+						{
+							text: "其他配置文件",
+							link: "/brochure/project/engineering/others",
+						},
 					],
 				},
 				{
