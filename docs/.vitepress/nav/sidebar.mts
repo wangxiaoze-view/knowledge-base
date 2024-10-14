@@ -221,6 +221,14 @@ export default {
 							link: "/brochure/project/engineering/husky",
 						},
 						{
+							text: "commitizen",
+							link: "/brochure/project/engineering/commitizen",
+						},
+						{
+							text: "changelog",
+							link: "/brochure/project/engineering/changelog",
+						},
+						{
 							text: "其他配置文件",
 							link: "/brochure/project/engineering/others",
 						},

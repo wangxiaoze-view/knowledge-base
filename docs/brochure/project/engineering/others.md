@@ -33,3 +33,12 @@ shamefully-hoist=true
 # 设置为 false 时，表示放宽对 peer dependencies 的严格检查，避免安装时出现错误。
 strict-peer-dependencies=false
 ```
+
+## .nvmrc
+
+设置`nvm`的配置信息
+
+```bash
+# 设置node版本
+v16.14.0
+```
