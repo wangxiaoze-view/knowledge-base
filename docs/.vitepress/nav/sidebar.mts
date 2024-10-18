@@ -116,6 +116,10 @@ export default {
 							text: "数据类型",
 							link: "/brochure/javascript/base/data",
 						},
+						{
+							text: "线程引发的思考",
+							link: "/brochure/javascript/base/threads",
+						},
 					],
 				},
 				{
