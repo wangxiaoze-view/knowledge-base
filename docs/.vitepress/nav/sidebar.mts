@@ -168,6 +168,12 @@ export default {
 						},
 					],
 				},
+				{
+					text: "代码片段",
+					items: [
+						{ text: "Loading的处理", link: "/brochure/vue/code/loading" },
+					],
+				},
 			],
 		},
 		{
@@ -299,6 +305,7 @@ export default {
 				},
 			],
 		},
+
 		{
 			text: "其它",
 			items: [
