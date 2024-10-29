@@ -61,10 +61,7 @@ export default {
 				{ text: "V2", link: "/docs/log-reporting/v2" },
 			],
 		},
-		{
-			text: "sim-admin",
-			items: [{ text: "敬请期待", link: "/docs/sim-admin/1" }],
-		},
+
 		{
 			text: "temp-pro",
 			items: [{ text: "如何使用", link: "/docs/temp-pro/docs" }],
@@ -349,18 +346,44 @@ export default {
 				{
 					text: "技术调研",
 					items: [
-						{ text: `跨端之多端系统`, link: "/work/summary/dev/1" },
-						{ text: `浅谈跨端技术的局限性`, link: "/work/summary/dev/2" },
-						{ text: `网站更新一`, link: "/work/summary/dev/3" },
-						{ text: `网站更新二`, link: "/work/summary/dev/3-1" },
 						{
-							text: `发现nvm1.1.12版本的一个问题`,
-							link: "/work/summary/dev/4",
+							text: `跨端`,
+							items: [
+								{ text: `跨端之多端系统`, link: "/work/summary/dev/1" },
+								{ text: `浅谈跨端技术的局限性`, link: "/work/summary/dev/2" },
+							],
 						},
-						{ text: `记录使用1Panel遇到的问题`, link: "/work/summary/dev/5" },
-						{ text: `nvm替换为fnm`, link: "/work/summary/dev/6" },
-						{ text: `rust-env没有继承问题`, link: "/work/summary/dev/7" },
-						{ text: `开发远程组件的介绍`, link: "/work/summary/dev/8" },
+
+						{
+							text: `网站更新`,
+							items: [
+								{ text: `网站更新一`, link: "/work/summary/dev/3" },
+								{ text: `网站更新二`, link: "/work/summary/dev/3-1" },
+							],
+						},
+
+						{
+							text: `开发工具`,
+							items: [
+								{
+									text: `nvm1.1.12版本的一个问题`,
+									link: "/work/summary/dev/4",
+								},
+								{ text: `nvm替换为fnm`, link: "/work/summary/dev/6" },
+								{ text: `开发远程组件的介绍`, link: "/work/summary/dev/8" },
+							],
+						},
+
+						{
+							text: `其他语言`,
+							items: [
+								{
+									text: `记录使用1Panel遇到的问题`,
+									link: "/work/summary/dev/5",
+								},
+								{ text: `rust-env没有继承问题`, link: "/work/summary/dev/7" },
+							],
+						},
 					],
 				},
 				{

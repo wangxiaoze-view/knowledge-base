@@ -44,10 +44,6 @@ outline: deep
 
 - [地址](/demos/css/button/common)
 
-### Sim-Admin <Badge type="warning" text="项目紧急开发中" />
-
-> 一款简单的中后台管理系统
-
 ### HarmonyOs-App
 
 > 这是一款鸿蒙 App, 当然不会涉及到业务逻辑，仅仅是布局而已；
