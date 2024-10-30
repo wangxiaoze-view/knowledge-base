@@ -40,6 +40,7 @@ export default {
 				{ text: "语音合成", link: "/demos/js/speech/index" },
 				{ text: "视口交叉", link: "/demos/js/windowCross/index" },
 				{ text: "粘贴板", link: "/demos/js/clipboard/index" },
+				{ text: "上万条数据的渲染", link: "/demos/js/data/index" },
 			],
 		},
 		{
@@ -166,12 +167,6 @@ export default {
 							text: "watch, watchEffect 和 computed",
 							link: "/brochure/vue/interview/watch_watchEffect_computed",
 						},
-					],
-				},
-				{
-					text: "代码片段",
-					items: [
-						{ text: "Loading的处理", link: "/brochure/vue/code/loading" },
 					],
 				},
 			],
