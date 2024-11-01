@@ -18,7 +18,7 @@
     "@vitepress-demo-preview/component": "^2.3.2",
     "@vitepress-demo-preview/plugin": "^1.2.3",
     "medium-zoom": "^1.1.0",
-    "sass": "^1.78.0",
+    "sass": "1.78.0",
     "vitepress": "^1.2.3",
     "vitepress-markdown-timeline": "^1.2.1"
   },

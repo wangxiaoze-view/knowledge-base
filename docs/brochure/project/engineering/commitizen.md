@@ -100,7 +100,7 @@ pnpm add -D commitizen cz-customizable
 
 ```js
 {
-  "path": "cz-conventional-changelog"
+  "path": "cz-customizable"
 }
 ```
 
@@ -212,7 +212,19 @@ pnpm add -D commitizen cz-message-helper
 
 ```js
 {
-  "path": "cz-conventional-changelog"
+  "path": "cz-message-helper"
+}
+```
+
+不过我习惯将配置文件放置`package.json`
+
+```json
+{
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-message-helper"
+		}
+	}
 }
 ```
 
@@ -238,37 +250,37 @@ module.exports = {
 			name: "type",
 			message: "请选择要提交的更改类型:",
 			choices: [
-				{ value: ":bug: fix: ", name: "🐛 fix: -------- 修复BUG" },
-				{ value: ":sparkles: feat: ", name: "✨ feat: ------- 新功能" },
-				{ value: ":memo: docs: ", name: "📝 docs: ------- 仅文档更改" },
+				{ value: "fix", name: "🐛 fix: -------- 修复BUG" },
+				{ value: "feat", name: "✨ feat: ------- 新功能" },
+				{ value: "docs", name: "📝 docs: ------- 仅文档更改" },
 				{
-					value: ":lipstick: style: ",
+					value: "style",
 					name: "💄 style: ------ 不影响代码运行的更改(调整空白、格式、缺少分号等)",
 				},
 				{
-					value: ":card_file_box: chore: ",
+					value: "chore",
 					name: "🗃️  chore: ------ 非 src 和 test 的修改",
 				},
 				{
-					value: ":recycle: refactor: ",
+					value: "refactor",
 					name: "♻️  refactor: --- 重构架构或代码",
 				},
-				{ value: ":zap: perf:", name: "⚡️ perf:  ------ 改进性能的代码更改" },
-				{ value: ":test_tube: test: ", name: "🧪 test:  ------ 添加测试单元" },
+				{ value: "perf", name: "⚡️ perf:  ------ 改进性能的代码更改" },
+				{ value: "test", name: "🧪 test:  ------ 添加测试单元" },
 				{
-					value: ":rewind: revert: ",
+					value: "revert",
 					name: "⏪ revert: ----- 回退至某一个版本",
 				},
 				{
-					value: ":truck: merge: ",
+					value: "merge",
 					name: "🚚 merge: ------ 合并一个分支, 解决冲突分支",
 				},
 				{
-					value: ":construction_worker: ci: ",
+					value: "ci",
 					name: "👷 ci: --------- 自动化流程配置或脚本修改",
 				},
 				{
-					value: ":wrench: build: ",
+					value: "build",
 					name: "🔧 build: ------ 修改构建流程或外部依赖",
 				},
 			],
@@ -338,6 +350,8 @@ module.exports = {
 	templater: (answers, wrap) => {
 		let template = "";
 
+		console.log(answers);
+
 		template += answers.type ? `${answers.type}` : ``;
 		template += answers.scope ? `(${answers.scope})` : ``;
 		template += answers.subject ? `: ${answers.subject}` : ``;
@@ -354,6 +368,19 @@ module.exports = {
 
 	language: "cn",
 };
+```
+
+```json
+{
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-message-helper"
+		},
+		"cz-message-helper": {
+			"config": "./.cz-message.js"
+		}
+	}
+}
 ```
 
 把代码文件添加到暂存区后,使用 `Commitizen` 生成符合规范的代码提交信息:

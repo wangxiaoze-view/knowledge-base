@@ -231,6 +231,10 @@ export default {
 							link: "/brochure/project/engineering/changelog",
 						},
 						{
+							text: ".release-it",
+							link: "/brochure/project/engineering/release-it",
+						},
+						{
 							text: "其他配置文件",
 							link: "/brochure/project/engineering/others",
 						},
