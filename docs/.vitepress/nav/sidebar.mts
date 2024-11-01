@@ -289,8 +289,9 @@ export default {
 				{
 					text: "运营",
 					items: [
-						{ text: "宝塔面板", link: "/brochure/server/operations/baoTa" },
 						{ text: "pm2", link: "/brochure/server/operations/pm2" },
+						{ text: "宝塔面板", link: "/brochure/server/operations/baoTa" },
+						{ text: "1panel面板", link: "/brochure/server/operations/1panel" },
 					],
 				},
 			],
