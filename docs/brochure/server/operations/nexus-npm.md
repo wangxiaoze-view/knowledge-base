@@ -7,7 +7,6 @@ outline: deep
 近期在`review`代码的时候发现了一些关于项目的问题，项目中冗余的代码比较多，有很多都是辅助粘贴的，
 一些`utils`工具以及一些方法都是多余的，这样不是一个俩个项目是这样的，基本大部分项目都是这样的；
 
-
 对于企业级的项目，没有任何关于企业的一些工具，这样我想到一种可能：就是将一些工具统一封装成公司内部
 专用的组件或者工具，因为公司内部都是内网开发的，不适用于将`npm`包上传到`npm`上，那么我了解到一个`nexus3`
 刚好可以部署私有化的工具；
@@ -37,16 +36,14 @@ outline: deep
 
 ![x](https://file.wangzevw.com/images/image.2a53jc3z6u.webp)
 
-
 ### 创建 hosted 类型的 npm
 
 ![x](https://file.wangzevw.com/images/image.5xan6v0od1.webp)
 ![x](https://file.wangzevw.com/images/image.7egs8m721a.webp)
 
-- `Name`: 定义一个名称 
+- `Name`: 定义一个名称
 - `Storage`：我们下拉选择前面创建好的专用 。
 - `Hosted`：开发环境，我们运行重复发布，因此 Delpoyment policy 我们选择 Allow redeploy。这个很重要！
-
 
 ### 创建一个 proxy 类型的 npm 仓库
 
@@ -68,7 +65,7 @@ outline: deep
 接着我们需要在这个项目配置私有源
 ![x](https://file.wangzevw.com/images/image.3nrmndxyn3.webp)
 
-``` bash
+```bash
 npm config set registry http://154.37.212.237:8081/repository/npm-store-group/
 ```
 
@@ -102,6 +99,10 @@ npm config set registry http://154.37.212.237:8081/repository/npm-store-local/
 
 ![X](https://file.wangzevw.com/images/image.8vmxaepudl.webp)
 
+<p style="color: #ff0000">注意：可能会出现没有权限的情况：BASIC realm="Sonatype Nexus Repository Manager", 如果出现以下情况，需要设置如图</p>
+
+![x](https://file.wangzevw.com/images/image.60u97nud0p.webp)
+
 完成之后在需要上传插件的项目执行
 
 ```bash
@@ -116,6 +117,7 @@ npm login
 ```bash
 npm publish
 ```
+
 回车之后发现一个错误，
 
 ![X](https://file.wangzevw.com/images/image.4n7q0l6hnj.webp)
@@ -130,6 +132,6 @@ npm publish
 
 嘿嘿，这样就成功了，接着在`demo-npm`项目中安装这个插件
 
-运行`npm config get registry` 如果返回的是`local`， 那么就需要设置`groUp` 
+运行`npm config get registry` 如果返回的是`local`， 那么就需要设置`groUp`
 
 ![x](https://file.wangzevw.com/images/image.8s3bcpkjog.webp)
