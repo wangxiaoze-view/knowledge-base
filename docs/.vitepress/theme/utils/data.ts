@@ -6,13 +6,23 @@ export const NAV_DATA: NavData[] = [
 		items: [
 			{
 				icon: "https://www.wangzevw.com/logo.png",
-				title: "Remote-Components_Lib",
+				title: "Sim-Admin",
+				badge: {
+					text: "后台管理系统",
+					type: "warning",
+				},
+				desc: "一款超级简单的后台管理系统",
+				link: "https://github.com/wangxiaoze-view/sim-admin",
+			},
+			{
+				icon: "https://www.wangzevw.com/logo.png",
+				title: "functional-helpers-lib",
 				badge: {
 					text: "个人项目",
 					type: "warning",
 				},
 				desc: "可以通过远程git地址引入公共的组件模板, 内置一些常用的hooks",
-				link: "https://docs.wangzevw.com/personal/remote-components-lib/info.html",
+				link: "https://github.com/wangxiaoze-view/functional-helpers-lib",
 			},
 			{
 				icon: "https://www.wangzevw.com/logo.png",
