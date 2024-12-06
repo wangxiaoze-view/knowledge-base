@@ -1,13 +1,21 @@
-.DS_Store
-Thumbs.db
-db.json
-*.log
+# build output
+dist/
+# generated types
+.astro/
+
+# dependencies
 node_modules/
-.deploy*/
-_multiconfig.yml
 
-/*/.DS_Store
-/**/*/.DS_Store
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-docs/.vitepress/cache
-docs/.vitepress/dist
+
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
