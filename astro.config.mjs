@@ -1,27 +1,14 @@
-import { defineConfig } from "astro/config";
-import starlight from "@astrojs/starlight";
+// @ts-check
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
+
+import vue from '@astrojs/vue';
+
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		starlight({
-			title: "Knowledge Base",
-			social: {
-				github: "https://github.com/wangxiaoze-view",
-			},
-			sidebar: [
-				{
-					label: "Guides",
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: "Example Guide", slug: "guides/example" },
-					],
-				},
-				{
-					label: "Reference",
-					autogenerate: { directory: "reference" },
-				},
-			],
-		}),
-	],
+    site: 'https://example.com',
+    integrations: [mdx(), sitemap(), vue(), tailwind()],
 });
