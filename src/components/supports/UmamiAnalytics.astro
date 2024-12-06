@@ -1,0 +1,11 @@
+---
+import { SETTINGS } from '@/consts'
+const {UmamiAnalytics: {enable, dataWebsiteID}} = SETTINGS
+---
+
+{
+    enable && (
+        <script defer src="https://cloud.umami.is/script.js" data-website-id=`${dataWebsiteID}`></script>
+    )
+}
+

@@ -1,0 +1,19 @@
+---
+import { SETTINGS } from "@/consts";
+
+const {
+	GoogleAnalytics: { enable, id },
+} = SETTINGS;
+---
+
+{
+    enable && (
+        <script is:inline type="text/partytown" src=`https://www.googletagmanager.com/gtag/js?id=${id}`></script>
+        <script is:inline define:vars={{ id }}>
+            window.dataLayer = window.dataLayer || []
+            window.gtag = function gtag() { dataLayer.push(arguments) }
+            window.gtag('js', new Date())
+            window.gtag('config', id)
+        </script>
+    )
+}

@@ -1,0 +1,40 @@
+---
+import Header from "@/components/Header.astro";
+import BaseHead from "@/components/BaseHead.astro";
+import LenisScroll from "@/components/supports/LenisScroll.astro";
+import GoogleAnalytics from "@/components/supports/GoogleAnalytics.astro";
+import UmamiAnalytics from "@/components/supports/UmamiAnalytics.astro";
+import { SITE } from "@/consts";
+const { title, description } = SITE;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-hide">
+	<head>
+		<BaseHead title={title} description={description} />
+		<!-- lenis	 -->
+		<LenisScroll />
+		<!-- google 分析 -->
+		<GoogleAnalytics />
+		<!-- Umami 分析 -->
+		<UmamiAnalytics />
+	</head>
+	<body class="scroll-hide">
+		<div class="page-contaienr">
+			<Header />
+			<main>
+				<slot />
+			</main>
+		</div>
+		<div class="page-footer"></div>
+		<style>
+			.scroll-hide {
+				-ms-overflow-style: none;
+				scrollbar-width: none;
+			}
+			.scroll-hide::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+	</body>
+</html>

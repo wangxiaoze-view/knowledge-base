@@ -1,0 +1,20 @@
+---
+import { SETTINGS } from "@/consts";
+const {
+	lenis: { enable },
+} = SETTINGS;
+---
+
+{
+  enable && (
+    <script is:inline src="/libs/lenis@1.0.42.min.js"></script>
+    <script is:inline>
+			const lenis = new Lenis();
+			function raf(time) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
+			requestAnimationFrame(raf);
+		</script>
+  )
+}
