@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /guide/start-guide
+      link: /guide/01_阅读指南/01_初衷
     - theme: alt
       text: View on GitHub
       link: https://github.com/wangxiaoze-view
