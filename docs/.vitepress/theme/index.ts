@@ -1,12 +1,9 @@
 import { h, onMounted, watch, nextTick } from "vue";
 import { useRoute, useData, Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { AntDesignContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
 
 import "./style.css";
-// demo
-import "@vitepress-demo-preview/component/dist/style.css";
 // 时间线
 import "vitepress-markdown-timeline/dist/theme/index.css";
 
@@ -64,7 +61,5 @@ export default {
 		return h(DefaultTheme.Layout, props);
 	},
 
-	enhanceApp({ app, router, siteData }) {
-		app.component("demo-preview", AntDesignContainer);
-	},
+	// enhanceApp({ app, router, siteData }) {},
 } satisfies Theme;
