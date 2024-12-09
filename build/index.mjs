@@ -1,10 +1,23 @@
-// import fs from "node:fs";
+import fs from "node:fs";
 
-// // 文件复制到
-// function copyFile(src, dest) {
-// 	const readStream = fs.createReadStream(src);
-// 	const writeStream = fs.createWriteStream(dest);
-// 	readStream.pipe(writeStream);
-// }
+const entry = ["assets", "guide", "brochure", "project", "life"];
 
-// copyFile("vercel.json", "docs/.vitepress/dist/vercel.json");
+const vercel = {
+	headers: Array.from({
+		length: entry.length,
+	}).map((_, i) => ({
+		source: `/${entry[i]}/(.*)`,
+		headers: [
+			{
+				key: "Cache-Control",
+				value: "max-age=31536000, immutable",
+			},
+		],
+	})),
+};
+
+// 文件写入
+fs.writeFileSync(
+	"docs/.vitepress/dist/vercel.json",
+	JSON.stringify(vercel, null, 2)
+);
