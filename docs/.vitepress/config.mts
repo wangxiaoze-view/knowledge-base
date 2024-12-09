@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { resolve } from "node:path";
+import { exit } from "node:process";
 import timeline from "vitepress-markdown-timeline";
 import { vitepressDemoPlugin } from "vitepress-demo-plugin";
 
@@ -60,5 +61,9 @@ export default defineConfig({
 				},
 			});
 		},
+	},
+	buildEnd() {
+		// fix: 修复避免在vercel中打包一直计算时间
+		exit();
 	},
 });
