@@ -5,6 +5,7 @@ import timeline from "vitepress-markdown-timeline";
 import { vitepressDemoPlugin } from "vitepress-demo-plugin";
 
 import { head } from "./config/head.mts";
+import AutoSidebar from "./config/plugins.mts";
 import { buildSidebar, generatePath } from "./theme/utils/generate-path";
 
 export default defineConfig({
@@ -12,6 +13,29 @@ export default defineConfig({
 	description: "知识库",
 	ignoreDeadLinks: true,
 	head,
+	vite: {
+		plugins: [...AutoSidebar],
+		// build: {
+		// 	rollupOptions: {
+		// 		output: {
+		// 			// chunkFileNames: chunkInfo => {
+		// 			// 	if (chunkInfo.isEntry) {
+		// 			// 		return "js/[name]-[hash].js";
+		// 			// 	}
+		// 			// 	return "js/chunks/[name]-[hash].js";
+		// 			// }, // 引入文件名的名称
+		// 			entryFileNames: chunkInfo => {
+		// 				console.log(chunkInfo);
+		// 				if (chunkInfo.isEntry) {
+		// 					return "js/[hash]-[hash].js";
+		// 				}
+		// 				return "js/chunks/[hash]-[hash].js";
+		// 			}, // 包的入口文件名称
+		// 			assetFileNames: "[ext]/[name]-[hash].[ext]", // 资源文件像 字体，图片等
+		// 		},
+		// 	},
+		// },
+	},
 	themeConfig: {
 		nav: [
 			{ text: "首页", link: "/" },
@@ -21,10 +45,10 @@ export default defineConfig({
 			{ text: "生活趣记", link: "/life/01_介绍" },
 		],
 		sidebar: {
-			"/guide/": buildSidebar(generatePath("docs/guide")),
-			"/brochure/": buildSidebar(generatePath("docs/brochure")),
-			"/project/": buildSidebar(generatePath("docs/project")),
-			"/life/": buildSidebar(generatePath("docs/life")),
+			// "/guide/": buildSidebar(generatePath("docs/guide")),
+			// "/brochure/": buildSidebar(generatePath("docs/brochure")),
+			// "/project/": buildSidebar(generatePath("docs/project")),
+			// "/life/": buildSidebar(generatePath("docs/life")),
 		},
 
 		socialLinks: [
