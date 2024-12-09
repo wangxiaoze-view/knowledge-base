@@ -14,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "@mdit-vue/shared": "^2.1.3",
+    "@types/node": "^22.10.1",
     "medium-zoom": "^1.1.0",
     "sass": "1.78.0",
     "vitepress": "^1.2.3",

@@ -1,12 +1,10 @@
 import { defineConfig } from "vitepress";
+import { resolve } from "node:path";
 import timeline from "vitepress-markdown-timeline";
-import { exit } from "process";
-
 import { vitepressDemoPlugin } from "vitepress-demo-plugin";
 
 import { head } from "./config/head.mts";
 import { buildSidebar, generatePath } from "./theme/utils/generate-path";
-import { resolve } from "node:path";
 
 export default defineConfig({
 	title: "知识库",
@@ -52,6 +50,7 @@ export default defineConfig({
 		config(md) {
 			md.use(timeline);
 			md.use(vitepressDemoPlugin, {
+				//@ts-ignore
 				demoDir: resolve(__dirname, "../demos"),
 				// stackblitz: {
 				// 	show: true,
@@ -61,8 +60,5 @@ export default defineConfig({
 				},
 			});
 		},
-	},
-	buildEnd() {
-		exit();
 	},
 });
