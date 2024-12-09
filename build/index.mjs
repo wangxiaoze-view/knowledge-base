@@ -1,6 +1,7 @@
 import fs from "node:fs";
 
-const entry = ["assets", "guide", "brochure", "project", "life", "*"];
+// const entry = ["assets", "guide", "brochure", "project", "life", "*"];
+const entry = ["*"];
 
 const vercel = {
 	headers: Array.from({

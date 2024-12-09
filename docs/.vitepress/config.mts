@@ -15,26 +15,26 @@ export default defineConfig({
 	head,
 	vite: {
 		plugins: [...AutoSidebar],
-		// build: {
-		// 	rollupOptions: {
-		// 		output: {
-		// 			// chunkFileNames: chunkInfo => {
-		// 			// 	if (chunkInfo.isEntry) {
-		// 			// 		return "js/[name]-[hash].js";
-		// 			// 	}
-		// 			// 	return "js/chunks/[name]-[hash].js";
-		// 			// }, // 引入文件名的名称
-		// 			entryFileNames: chunkInfo => {
-		// 				console.log(chunkInfo);
-		// 				if (chunkInfo.isEntry) {
-		// 					return "js/[hash]-[hash].js";
-		// 				}
-		// 				return "js/chunks/[hash]-[hash].js";
-		// 			}, // 包的入口文件名称
-		// 			assetFileNames: "[ext]/[name]-[hash].[ext]", // 资源文件像 字体，图片等
-		// 		},
-		// 	},
-		// },
+		build: {
+			rollupOptions: {
+				output: {
+					// chunkFileNames: chunkInfo => {
+					// 	if (chunkInfo.isEntry) {
+					// 		return "js/[name]-[hash].js";
+					// 	}
+					// 	return "js/chunks/[name]-[hash].js";
+					// }, // 引入文件名的名称
+					entryFileNames: chunkInfo => {
+						console.log(chunkInfo);
+						if (chunkInfo.isEntry) {
+							return "js/[hash]-[hash].js";
+						}
+						return "js/chunks/[hash]-[hash].js";
+					}, // 包的入口文件名称
+					assetFileNames: "[ext]/[name]-[hash].[ext]", // 资源文件像 字体，图片等
+				},
+			},
+		},
 	},
 	themeConfig: {
 		nav: [
