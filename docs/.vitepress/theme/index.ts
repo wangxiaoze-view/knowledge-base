@@ -1,12 +1,8 @@
-// https://vitepress.dev/guide/custom-theme
 import { h, onMounted, watch, nextTick } from "vue";
 import { useRoute, useData, Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import { AntDesignContainer } from "@vitepress-demo-preview/component";
 import mediumZoom from "medium-zoom";
-import MNavLinks from "./components/MNavLinks.vue";
-import ElementPlus from "element-plus";
-import "element-plus/dist/index.css";
 
 import "./style.css";
 // demo
@@ -70,7 +66,5 @@ export default {
 
 	enhanceApp({ app, router, siteData }) {
 		app.component("demo-preview", AntDesignContainer);
-		app.component("MNavLinks", MNavLinks);
-		app.use(ElementPlus);
 	},
 } satisfies Theme;
