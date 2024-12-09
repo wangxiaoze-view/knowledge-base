@@ -22,5 +22,8 @@ fs.writeFileSync(
 	JSON.stringify(vercel, null, 2)
 );
 
-// 删除文件
-fs.unlinkSync("docs/.vitepress/dist/assets");
+// 检测是否有文件
+const exit = "docs/.vitepress/dist/assets";
+if (fs.accessSync(exit)) {
+	fs.rmSync(exit);
+}
