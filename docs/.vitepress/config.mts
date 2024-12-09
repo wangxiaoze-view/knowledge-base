@@ -5,7 +5,6 @@ import timeline from "vitepress-markdown-timeline";
 import { vitepressDemoPlugin } from "vitepress-demo-plugin";
 
 import { head } from "./config/head.mts";
-import AutoSidebar from "./config/plugins.mts";
 import { buildSidebar, generatePath } from "./theme/utils/generate-path";
 
 export default defineConfig({
@@ -13,9 +12,9 @@ export default defineConfig({
 	description: "知识库",
 	ignoreDeadLinks: true,
 	head,
-	vite: {
-		plugins: [...AutoSidebar],
-	},
+	// vite: {
+	// 	plugins: [...AutoSidebar],
+	// },
 	themeConfig: {
 		nav: [
 			{ text: "首页", link: "/" },
