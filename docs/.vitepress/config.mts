@@ -25,10 +25,10 @@ export default defineConfig({
 			{ text: "生活趣记", link: "/life/01_介绍" },
 		],
 		sidebar: {
-			// "/guide/": buildSidebar(generatePath("docs/guide")),
-			// "/brochure/": buildSidebar(generatePath("docs/brochure")),
-			// "/project/": buildSidebar(generatePath("docs/project")),
-			// "/life/": buildSidebar(generatePath("docs/life")),
+			"/guide/": buildSidebar(generatePath("docs/guide")),
+			"/brochure/": buildSidebar(generatePath("docs/brochure")),
+			"/project/": buildSidebar(generatePath("docs/project")),
+			"/life/": buildSidebar(generatePath("docs/life")),
 		},
 
 		socialLinks: [
