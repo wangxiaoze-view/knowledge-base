@@ -13,17 +13,8 @@ export default defineConfig({
 	description: "知识库",
 	ignoreDeadLinks: true,
 	head,
-	assetsDir: "static",
 	vite: {
 		plugins: [...AutoSidebar],
-		build: {
-			rollupOptions: {
-				output: {
-					// assetFileNames: "[ext]/[name]-[hash].[ext]",
-					// chunkFileNames: "js/chunks/[name]-[hash].js",
-				},
-			},
-		},
 	},
 	themeConfig: {
 		nav: [

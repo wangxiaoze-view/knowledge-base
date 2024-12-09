@@ -1,7 +1,6 @@
 import fs from "node:fs";
 
-// const entry = ["assets", "guide", "brochure", "project", "life", "*"];
-const entry = ["*"];
+const entry = ["assets", "guide", "brochure", "project", "life", "*"];
 
 const vercel = {
 	headers: Array.from({
@@ -22,3 +21,6 @@ fs.writeFileSync(
 	"docs/.vitepress/dist/vercel.json",
 	JSON.stringify(vercel, null, 2)
 );
+
+// 删除文件
+fs.unlinkSync("docs/.vitepress/dist/assets");
