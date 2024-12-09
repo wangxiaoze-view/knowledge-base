@@ -10,7 +10,6 @@ export default [
 		deletePrefix: "docs", // 删除路径前缀
 		sideBarResolved(data) {
 			// 接收完整的侧边栏对象以进行自定义修改
-			console.log(JSON.stringify(data), 123);
 			return data;
 		},
 		sideBarItemsResolved(data) {
