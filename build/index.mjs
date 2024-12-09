@@ -22,8 +22,8 @@ fs.writeFileSync(
 	JSON.stringify(vercel, null, 2)
 );
 
-// 检测是否有文件
-const exit = "docs/.vitepress/dist/assets";
-if (fs.accessSync(exit)) {
-	fs.rmSync(exit);
-}
+// // 检测是否有文件
+// const exit = "docs/.vitepress/dist/assets";
+// if (fs.accessSync(exit)) {
+// 	fs.rmSync(exit);
+// }
