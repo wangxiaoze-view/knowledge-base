@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>apply的使用</title>
+	</head>
+	<body>
+		当前人的姓名为：<span>-</span>
+		<script>
+			var person = { name: "Tom", age: 20 };
+			function renderName(...args) {
+				document.querySelector("span").innerHTML = this.name + args;
+			}
+			// this 指向 person
+			renderName.apply(person, [" hello", "world"]);
+			// this 指向 { name: "lisi" }
+			renderName.apply({ name: "lisi" }, [" very", "Good"]);
+		</script>
+	</body>
+</html>

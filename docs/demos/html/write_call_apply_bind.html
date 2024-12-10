@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>手写call，apply，bind</title>
+	</head>
+	<body>
+		当前人的姓名为：<span>-</span>
+
+		<script>
+			var person = { name: "Tom", age: 20 };
+			function renderName(...args) {
+				document.querySelector("span").innerHTML = this.name + args;
+			}
+		</script>
+
+		<script>
+			Function.prototype.myCall = function (thisArg, ...args) {
+				const obj = thisArg || globalThis;
+				// 这里的this指向调用的那个函数： renderName
+				obj.__fn = this;
+				const result = obj.__fn(...args);
+				delete obj.__fn;
+				return result;
+			};
+
+			// this 指向 person
+			renderName.myCall(person, " hello", "world");
+			// this 指向 { name: "lisi" }
+			renderName.myCall({ name: "lisi" }, " very", "Good");
+		</script>
+
+		<script>
+			Function.prototype.myApply = function (thisArg, argsArray) {
+				const obj = thisArg || globalThis;
+				// 这里的this指向调用的那个函数： renderName
+				obj.__fn = this;
+				const result = obj.__fn(...argsArray);
+				delete obj.__fn;
+				return result;
+			};
+			// this 指向 person
+			renderName.myApply(person, " hello", ["world"]);
+			// this 指向 { name: "lisi" }
+			renderName.myApply({ name: "lisi" }, [" very", "Good"]);
+		</script>
+
+		<script>
+			Function.prototype.myBind = function (thisArg, ...args) {
+				const obj = thisArg || globalThis;
+				// 这里的this指向调用的那个函数： renderName
+				obj.__fn = this;
+				return function (...newArgs) {
+					return obj.__fn.apply(obj, args.concat(newArgs));
+				};
+			};
+			// this 指向 person
+			var bind_1 = renderName.myBind(person, " hello", "world");
+			bind_1();
+			// this 指向 { name: "lisi" }
+			var bind_2 = renderName.myBind({ name: "lisi" }, " very", "Good");
+			bind_2();
+		</script>
+	</body>
+</html>
