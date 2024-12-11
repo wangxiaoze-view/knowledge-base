@@ -15,6 +15,7 @@ export default defineConfig({
 	// vite: {
 	// 	plugins: [...AutoSidebar],
 	// },
+	base: "/knowledge-base/",
 	themeConfig: {
 		nav: [
 			{ text: "首页", link: "/" },
