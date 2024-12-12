@@ -15,7 +15,7 @@ export default defineConfig({
 	// vite: {
 	// 	plugins: [...AutoSidebar],
 	// },
-	base: process.env.CLIENT_PLATFORM === "vercel" ? "/" : "/knowledge-base/",
+	base: "/knowledge-base/",
 	themeConfig: {
 		nav: [
 			{ text: "首页", link: "/" },
