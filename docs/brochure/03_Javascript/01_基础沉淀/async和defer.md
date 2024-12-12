@@ -11,7 +11,7 @@ outline: deep
 
 这里一张图可以完美解释：
 
-![x](https://file.wangzevw.com/images/avoid-render-blocking-javascript-with-async-defer.51e79lydsy.webp)
+![x](https://www.wangzevw.com/cdn-file/images/avoid-render-blocking-javascript-with-async-defer.51e79lydsy.webp)
 
 ## async
 

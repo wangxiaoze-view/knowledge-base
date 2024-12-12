@@ -22,14 +22,14 @@ export default {
 			for (let i = 0; i < images.length; i++) {
 				const item = images[i];
 				const src = item.src;
-				if (src.indexOf("file.wangzevw.com") !== -1) {
+				if (src.indexOf("www.wangzevw.com/cdn-file") !== -1) {
 					const lastIndex = src.lastIndexOf("/");
 					if (lastIndex !== -1) {
 						const end = src.substring(lastIndex, src.length);
 						item.setAttribute("data-origin", src);
 						item.setAttribute(
 							"data-github",
-							`https://github.com/wangxiaoze-view/picx-images-hosting/raw/master/images${end}`
+							`https://wangxiaoze-view.github.io/picx-images-hosting/images${end}`
 						);
 					}
 					item.onerror = function () {

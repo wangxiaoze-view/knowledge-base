@@ -15,7 +15,7 @@
 ## Handler
 
 解析过程参考下图：
-![解析图](https://file.wangzevw.com/images/tabs_loading.png)
+![解析图](https://www.wangzevw.com/cdn-file/images/tabs_loading.png)
 
 这里的案例针对于`vue`来讲的，如图，根据切换的方法，我们可以对其进行优化；优化的方案其中关键的是`对于url或者id依赖`的监听；这里可使用`computed`,为什么不同`watch`呢，`computed`是依赖缓存值的变换进行更新的，消耗小，解析`dom`元素加载后立马执行的，内部缓存机制复用，效率高，调试方便； 而`watch`在首次加载的时候默认是不进行更新，用于观察`vue`的数据变动，监听值是必须存在的；
 
