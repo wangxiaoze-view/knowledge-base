@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 背景
 
 昨天在逛[node 官网](https://nodejs.org/en)的时候，发现下载页面多了一`fnm`的包管理器；

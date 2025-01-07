@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 背景
 
 前端时间在开发个人项目过程中, 将一些工具包拆除去，以依赖的形式引入[`functional-helpers` ](https://github.com/wangxiaoze-view/functional-helpers-lib)

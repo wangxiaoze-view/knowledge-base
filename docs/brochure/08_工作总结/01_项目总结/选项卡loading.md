@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # 场景
 
 ::: warning
