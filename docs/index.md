@@ -35,3 +35,5 @@ features:
   - title: 总结
     details: 个人在开发中遇到问题的解决方案以及对生活的感悟；
 ---
+
+<p style="color: #ff0000;font-weight: 800;">该网站将会在下一个版本进行重构更新，不在继续使用vitepress文档化管理</p>
