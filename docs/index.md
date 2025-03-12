@@ -36,4 +36,7 @@ features:
     details: 个人在开发中遇到问题的解决方案以及对生活的感悟；
 ---
 
-<p style="color: #ff0000;font-weight: 800;">该网站将会在下一个版本进行重构更新，不在继续使用vitepress文档化管理</p>
+<div>
+<span style="color: #ff0000;font-weight: 800;">该网站将会在下一个版本进行重构更新，不在继续使用vitepress文档化管理; 最新文档不会在该网站发布！！！</span>
+<a href="https://github.com/wangxiaoze-view/blog" target="_blank">新版本上线了</a>
+</div>
