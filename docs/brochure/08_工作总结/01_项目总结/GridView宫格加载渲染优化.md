@@ -20,7 +20,7 @@ outline: deep
 
 > 分析图，如下图
 
-![GridView分析图](http://www.wangzevw.com/cdn-file/images/home_gridview_1.svg)
+![GridView分析图](http://wangxiaoze-view.github.io/picx-images-hosting/images/home_gridview_1.svg)
 
 ## 解决方案
 
@@ -30,8 +30,8 @@ outline: deep
 
 > 因为涉及公司源码，这里只将没有关系的图片展示出来
 
-![GridView解决图1](http://www.wangzevw.com/cdn-file/images/homeGridview_2.png)
-![GridView解决图2](http://www.wangzevw.com/cdn-file/images/homeGridview_3.png)
-![GridView解决图3](http://www.wangzevw.com/cdn-file/images/homeGridview_4.png)
+![GridView解决图1](http://wangxiaoze-view.github.io/picx-images-hosting/images/homeGridview_2.png)
+![GridView解决图2](http://wangxiaoze-view.github.io/picx-images-hosting/images/homeGridview_3.png)
+![GridView解决图3](http://wangxiaoze-view.github.io/picx-images-hosting/images/homeGridview_4.png)
 
 **以 js 追加元素 避免了编译的渲染的过程，从而避免 8s 时间的等待；在原来的基础上 优化了近 7-8s 左右；**

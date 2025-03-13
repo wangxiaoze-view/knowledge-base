@@ -33,7 +33,7 @@ pnpm add -D conventional-changelog conventional-changelog-cli
 
 当你执行这条命令的时候就会自动生成`CHANGELOG.md`文件, 如下：
 
-![x](https://www.wangzevw.com/cdn-file/images/image.45o6bf0ut.webp)
+![x](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.45o6bf0ut.webp)
 
 ## 自定义格式
 
@@ -140,4 +140,4 @@ export default {
 
 效果如下：
 
-![x](https://www.wangzevw.com/cdn-file/images/image.8l02pz4vrj.webp)
+![x](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.8l02pz4vrj.webp)

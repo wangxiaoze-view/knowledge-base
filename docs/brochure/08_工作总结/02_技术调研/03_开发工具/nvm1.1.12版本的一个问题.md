@@ -20,7 +20,7 @@ spawn("nvm", ["ls"], { shell: "cmd" });
 
 这一段代码就是就是通过`node`操作`nvm`，但针对于`1.1.11`版本是可行的，但是`1.1.12`会提示`NVM for Windows should be run from a terminal such as CMD or PowerShell.`也就是只能通过终端打开；
 
-![图片](https://www.wangzevw.com/cdn-file/images/nvm_20240425095509.png)
+![图片](https://wangxiaoze-view.github.io/picx-images-hosting/images/nvm_20240425095509.png)
 
 然后在看了一下[源码](https://github.com/coreybutler/nvm-windows)，发现`nvm1.1.12`是`go`语言编写的；于是我在源码中找到了这样一段代码：
 

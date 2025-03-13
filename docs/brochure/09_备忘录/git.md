@@ -175,7 +175,7 @@ git branch -v
 
 **`git log --all --graph`** 的效果如下：
 
-![git log --all --graph](https://www.wangzevw.com/cdn-file/images/git_graph.jpeg)
+![git log --all --graph](https://wangxiaoze-view.github.io/picx-images-hosting/images/git_graph.jpeg)
 
 ## 怎么删除不需要的分支？
 

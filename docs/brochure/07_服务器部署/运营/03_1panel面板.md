@@ -14,21 +14,21 @@ outline: deep
 
 首先在`应用商店`搜索`jenkins`，然后进行安装，接着傻瓜式安装，当然要勾选外部端口，这样才能访问`http:xxxx:8080`,等待其安装完成，安装成功之后，如下图:
 
-![x](https://www.wangzevw.com/cdn-file/images/image.pfcitpy1g.webp)
+![x](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.pfcitpy1g.webp)
 
 找到图中的`服务端口`按钮，打开网页如图：
-![X](https://www.wangzevw.com/cdn-file/images/image.45hoax4ywn.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.45hoax4ywn.webp)
 这里需要输入密码，密码的存放地址在网页中已经标明，只需要在服务器上找到即可，但是这里我们在`1panel`中找到图一中的`日志`按钮，如图：
-![X](https://www.wangzevw.com/cdn-file/images/image.m2ytak8q.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.m2ytak8q.webp)
 接着在`jenkins`傻瓜式安装即可，如图：
-![X](https://www.wangzevw.com/cdn-file/images/image.6t74la2a1r.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.6t74la2a1r.webp)
 
 然后等待`jenkins`安装完成
-![X](https://www.wangzevw.com/cdn-file/images/image.5c0zjj3435.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.5c0zjj3435.webp)
 自行配置用户名
-![X](https://www.wangzevw.com/cdn-file/images/image.99td07jjq5.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.99td07jjq5.webp)
 安装对应的插件, `Nodejs, Git Parameter, Publish Over SSH`当然您也就可以安装需要的插件
-![X](https://www.wangzevw.com/cdn-file/images/image.7lk030znhw.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.7lk030znhw.webp)
 
 ## 添加流水线
 
@@ -39,16 +39,16 @@ outline: deep
 3. 配置构建命令等，将打包后的文件上传到服务对应的域名
 4. 配置发布之后发送的邮件信息，这样就能收到成功或者失败的邮件
 
-![X](https://www.wangzevw.com/cdn-file/images/image.7sn7yhfzn8.webp)
-![X](https://www.wangzevw.com/cdn-file/images/image.1ap0565tsc.webp)
-![X](https://www.wangzevw.com/cdn-file/images/image.5j47ezwx9u.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.7sn7yhfzn8.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.1ap0565tsc.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.5j47ezwx9u.webp)
 
 ## 创建网站
 
-![X](https://www.wangzevw.com/cdn-file/images/image.7i0e5d1o0o.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.7i0e5d1o0o.webp)
 
 最后在`jenkins`配置`shell`
-![X](https://www.wangzevw.com/cdn-file/images/image.9rjeoul3sr.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.9rjeoul3sr.webp)
 解释上图：
 
 1. 系统运用的是`docker`, 那么就用`docker cp`当前的目录或者的 dist 的目录
@@ -56,9 +56,9 @@ outline: deep
 3. `1Panel-openresty-qVw7`是`docker`容器，也是`1panel`容器
 4. `/www/sites/154.37.212.237`是刚刚创建的网站, `index`是这个网站的根目录；
 
-![X](https://www.wangzevw.com/cdn-file/images/image.9nzsr4zaeb.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.9nzsr4zaeb.webp)
 
 那么设置完成之后，就可以重新打开网页就可以了；
-![X](https://www.wangzevw.com/cdn-file/images/image.39l6vjlekc.webp)
+![X](https://wangxiaoze-view.github.io/picx-images-hosting/images/image.39l6vjlekc.webp)
 
 关于`jenkins`的简单使用就到这里了，如果喜欢`1Panel`那就自己花时间研究一下吧！

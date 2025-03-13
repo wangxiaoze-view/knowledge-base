@@ -74,11 +74,11 @@ vue create 项目名称
 
 效果如下：
 
-![ui](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_16-48-15.png)
+![ui](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_16-48-15.png)
 
 点开`任务`：
 
-![任务](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_16-49-34.png)
+![任务](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_16-49-34.png)
 
 这里我们就能看到项目的一些资源大小，然后通过`webpack`配置针对于这些依赖项目进行优化;
 
@@ -358,13 +358,13 @@ const cdn = {
 
 到这里一个简单的`webpack`打包优化就完成了；我们通过`vue ui`打包看一下;
 
-![build](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_17-18-15.png)
+![build](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_17-18-15.png)
 
 这里的我们就可以看出压缩前与压缩后的文件大小对比，部署项目也可以轻松的实现`CDN`加速， 优化打包速度， 减少服务器压力， 提升用户体验。那这样的是不是可以做到瞬间打开页面呢？
 
-![success](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_17-20-15.png)
+![success](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_17-20-15.png)
 
-![success](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_17-21-36.png)
+![success](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_17-21-36.png)
 
 然后我们可以看出一个项目最后所用到的资源大小；
 
@@ -565,4 +565,4 @@ module.exports = defineConfig({
 
 ## 效果图
 
-![result](https://www.wangzevw.com/cdn-file/images/Snipaste_2024-04-30_17-24-45.png)
+![result](https://wangxiaoze-view.github.io/picx-images-hosting/images/Snipaste_2024-04-30_17-24-45.png)

@@ -22,7 +22,9 @@ export default {
 			for (let i = 0; i < images.length; i++) {
 				const item = images[i];
 				const src = item.src;
-				if (src.indexOf("www.wangzevw.com/cdn-file") !== -1) {
+				if (
+					src.indexOf("wangxiaoze-view.github.io/picx-images-hosting") !== -1
+				) {
 					const lastIndex = src.lastIndexOf("/");
 					if (lastIndex !== -1) {
 						const end = src.substring(lastIndex, src.length);
