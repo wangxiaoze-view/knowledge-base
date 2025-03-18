@@ -13,6 +13,9 @@ hero:
     - theme: brand
       text: 开始阅读
       link: /guide/01_阅读指南/01_初衷
+    - theme: brand
+      text: 博客
+      link: https://wangxiaoze-view.github.io/blog
     - theme: alt
       text: View on GitHub
       link: https://github.com/wangxiaoze-view
